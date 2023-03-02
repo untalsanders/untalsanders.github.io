@@ -9,12 +9,12 @@ export default function Home() {
                 <title>Blog</title>
                 <meta name="description" content="Mi blog web personal" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/blog/favicon.ico" />
             </Head>
             <main>
                 <div className={styles.center}>
                     <Image
-                        src="/logotipo.svg"
+                        src="/blog/logotipo.svg"
                         alt="Logotipo sandersgutierrez.github.io"
                         width={300}
                         height={300}
