@@ -1,15 +1,50 @@
 'use strict'
 
-import styles from '@/styles/components/Navbar.module.scss'
+import styled from 'styled-components'
 
-export default function Navbar({show}) {
+export default function Navbar() {
     return (
-        <nav className={`${styles.Nav} ${show ? styles.ShowMenu : ''}`}>
-            <a href="/blog#about">Sobre Mí</a>
-            <a href="/blog#services">Servicios</a>
-            <a href="/blog#portfolio">Portafolio</a>
-            <a href="/blog/blog">Blog</a>
-            <a href="/blog#contact">Contacto</a>
-        </nav>
+        <NavbarContainer>
+            <Menu>
+                <MenuItem>
+                    <MenuItemLink>HOME</MenuItemLink>
+                </MenuItem>
+                <MenuItem>
+                    <MenuItemLink>ABOUT ME</MenuItemLink>
+                </MenuItem>
+                <MenuItem>
+                    <MenuItemLink>SERVICES</MenuItemLink>
+                </MenuItem>
+                <MenuItem>
+                    <MenuItemLink>PORTFOLIO</MenuItemLink>
+                </MenuItem>
+                <MenuItem>
+                    <MenuItemLink>BLOG</MenuItemLink>
+                </MenuItem>
+                <MenuItem>
+                    <MenuItemLink>CONTACT</MenuItemLink>
+                </MenuItem>
+            </Menu>
+        </NavbarContainer>
     )
 }
+
+const NavbarContainer = styled.nav``
+
+const Menu = styled.ul`
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+`
+
+const MenuItem = styled.li`
+    height: 100%;
+`
+
+const MenuItemLink = styled.a`
+    &:hover {
+        background-color: #1117;
+        color: #f9af16;
+        transition: 0.8s all ease;
+    }
+`

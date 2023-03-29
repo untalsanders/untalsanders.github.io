@@ -1,27 +1,20 @@
 'use strict'
 
-import { useState } from 'react'
-import BurgerButton from './BurgerButton'
+import styled from 'styled-components'
+import { Wrapper } from './Common'
 import Logo from './Logo'
-import Navbar from './Navbar'
-import styles from '@/styles/components/Header.module.scss'
 
 export default function Header() {
-    const [showNavbar, setShowNavbar] = useState(false)
-    const [zIndex, setZIndex] = useState(false)
-
-    const toggleNavbar = () => {
-        setShowNavbar(!showNavbar)
-        setZIndex(true)
-    }
-
     return (
-        <header className={styles.Header}>
-            <div className={`container ${styles.container}`}>
+        <HeaderContainer>
+            <Wrapper>
                 <Logo />
-                <BurgerButton onClick={toggleNavbar} zIndex={zIndex} />
-                <Navbar show={showNavbar} />
-            </div>
-        </header>
+            </Wrapper>
+        </HeaderContainer>
     )
 }
+
+const HeaderContainer = styled.header`
+    background-color: #222;
+    color: #e4e4e4;
+`

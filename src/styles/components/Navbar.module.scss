@@ -2,27 +2,6 @@
 
 @import '../variables';
 
-.Nav {
-    display: none;
-
-    @media (min-width: map.get($breakpoints, 'lg')) {
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-
-        a {
-            padding: 1.5rem 1rem;
-
-            &:hover {
-                background-color: #1117;
-                color: #f9af16;
-                padding: 1.5rem 1rem;
-                transition: all .8s ease;
-            }
-        }
-    }
-}
-
 .ShowMenu {
     background-color: #000d;
     display: flex;

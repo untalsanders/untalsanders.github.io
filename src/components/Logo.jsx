@@ -1,13 +1,21 @@
 'use strict'
 
 import Image from 'next/image'
-import styles from '@/styles/components/Logo.module.scss'
+import styled from 'styled-components'
 
 export default function Logo() {
     return (
-        <div className={styles.Logo}>
+        <LogoContainer>
             <Image src="/blog/logotipo.svg" alt="Logotipo sandersgutierrez.github.io" width={45} height={45} priority />
             Sanders Gutiérrez
-        </div>
+        </LogoContainer>
     )
 }
+
+const LogoContainer = styled.div`
+    display: flex;
+    align-items: center;
+    column-gap: .8rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+`

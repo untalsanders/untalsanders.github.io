@@ -2,7 +2,6 @@
 
 import Header from '@/components/Header'
 import Head from 'next/head'
-import styles from '@/styles/pages/Index.module.scss'
 
 export default function Home() {
     return (

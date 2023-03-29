@@ -66,8 +66,4 @@ video {
 .container {
     max-width: 90%;
     margin: 0 auto;
-
-    @media only screen and (min-width: map.get($breakpoints, 'xl')) {
-        max-width: 80%;
-    }
 }
