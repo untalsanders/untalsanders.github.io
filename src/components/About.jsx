@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <section id="about">
+        <section className="container">
             <Image src="/blog/images/avatar.png" alt="Avatar" width={240} height={240} />
             <div>
                 <h2>¿Quién Soy?</h2>

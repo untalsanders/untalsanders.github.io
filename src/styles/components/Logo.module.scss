@@ -1,0 +1,16 @@
+@use 'sass:map';
+
+@import '../variables';
+
+.Logo {
+    display: flex;
+    align-items: center;
+    column-gap: .8rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 1rem 0;
+
+    @media (min-width: map.get($breakpoints, 'sm')) {
+        font-size: 1.5rem;
+    }
+}
