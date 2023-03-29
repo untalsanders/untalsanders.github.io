@@ -1,15 +1,12 @@
 'use strict'
 
 import styled from 'styled-components'
-import { Wrapper } from './Common'
-import Logo from './Logo'
+import Navbar from './Navbar'
 
 export default function Header() {
     return (
         <HeaderContainer>
-            <Wrapper>
-                <Logo />
-            </Wrapper>
+            <Navbar />
         </HeaderContainer>
     )
 }
