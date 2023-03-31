@@ -14,7 +14,7 @@ const LandingContainer = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    z-index: -1;
+    bottom: 0;
 `
 
 const LandingContent = styled.div`
@@ -53,30 +53,30 @@ const LandingContent = styled.div`
     }
 `
 
-const SocialNetworkIcons = styled.div`
+const SocialNetwork = styled.div`
     font-size: clamp(1.5rem, 2vw, 4rem);
     display: flex;
     column-gap: min(2rem, 2rem);
     margin-top: 0.5em;
     color: black;
+`
 
-    a {
-        display: flex;
-        background-color: #fff;
-        border-radius: 50%;
-        padding: min(0.8rem, 1rem);
+const SocialNetworkItem = styled.a`
+    display: flex;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: min(0.8rem, 1rem);
 
-        :nth-of-type(1) {
-            color: #0a66c2;
-        }
+    :nth-of-type(1) {
+        color: #0a66c2;
+    }
 
-        :nth-of-type(3) {
-            color: #ff0000;
-        }
+    :nth-of-type(3) {
+        color: #ff0000;
+    }
 
-        :nth-of-type(4) {
-            color: #1c9cea;
-        }
+    :nth-of-type(4) {
+        color: #1c9cea;
     }
 `
 
@@ -90,20 +90,20 @@ export default function Landing() {
                     <FcReading /> AND I NEVER STOP LEARNING <FcReading />
                 </span>
                 <span>Let&apos;s work together and build something unique.</span>
-                <SocialNetworkIcons>
-                    <a href="https://linkedin.com/in/sandersgutierrez" target="blank">
+                <SocialNetwork>
+                    <SocialNetworkItem href="https://linkedin.com/in/sandersgutierrez" target="_blank">
                         <FaLinkedin />
-                    </a>
-                    <a href="https://github.com/sandersgutierrez" target="blank">
+                    </SocialNetworkItem>
+                    <SocialNetworkItem href="https://github.com/sandersgutierrez" target="_blank">
                         <FaGithub />
-                    </a>
-                    <a href="https://youtube.com/@sandersgutierrez" target="blank">
+                    </SocialNetworkItem>
+                    <SocialNetworkItem href="https://youtube.com/@sandersgutierrez" target="_blank">
                         <FaYoutube />
-                    </a>
-                    <a href="https://twitter.com/untalsanders" target="blank">
+                    </SocialNetworkItem>
+                    <SocialNetworkItem href="https://twitter.com/untalsanders" target="_blank">
                         <FaTwitter />
-                    </a>
-                </SocialNetworkIcons>
+                    </SocialNetworkItem>
+                </SocialNetwork>
             </LandingContent>
         </LandingContainer>
     )

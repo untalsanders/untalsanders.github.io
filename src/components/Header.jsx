@@ -14,4 +14,5 @@ export default function Header() {
 const HeaderContainer = styled.header`
     background-color: #222;
     color: #e4e4e4;
+    z-index: 1;
 `
