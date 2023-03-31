@@ -98,12 +98,24 @@ export default function Navbar() {
                 {showMobileMenu ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <Menu open={showMobileMenu}>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>HOME</MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>ABOUT ME</MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>SERVICES</MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>PORTFOLIO</MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>BLOG</MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>CONTACT</MenuItem>
+                <MenuItem href="/blog#top" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    HOME
+                </MenuItem>
+                <MenuItem href="/blog#about-me" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    ABOUT ME
+                </MenuItem>
+                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    SERVICES
+                </MenuItem>
+                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    PORTFOLIO
+                </MenuItem>
+                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    BLOG
+                </MenuItem>
+                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    CONTACT
+                </MenuItem>
             </Menu>
         </NavbarContainer>
     )
