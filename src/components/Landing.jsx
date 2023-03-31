@@ -84,12 +84,12 @@ export default function Landing() {
     return (
         <LandingContainer>
             <LandingContent>
-                <h3>Hi, I'm</h3>
+                <h3>Hi, I&apos;m</h3>
                 <h2>SOFTWARE ENGINEER</h2>
                 <span>
                     <FcReading /> AND I NEVER STOP LEARNING <FcReading />
                 </span>
-                <span>Let's work together and build something unique.</span>
+                <span>Let&apos;s work together and build something unique.</span>
                 <SocialNetworkIcons>
                     <a href="https://linkedin.com/in/sandersgutierrez" target="blank">
                         <FaLinkedin />
