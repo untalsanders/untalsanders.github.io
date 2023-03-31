@@ -24,7 +24,7 @@ const LogoContainer = styled.div`
 const MobileIcon = styled.div`
     display: flex;
     cursor: pointer;
-    padding: 1.2rem;
+    padding: 1.4rem;
     z-index: 1;
 
     &:hover {
@@ -46,26 +46,28 @@ const Menu = styled.nav`
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    left: ${({ open }) => (open ? 0 : '-100%')};
-    top: 0;
+    top: ${({ open }) => (open ? 0 : '-100vh')};
+    left: 0;
+    right: 0;
     bottom: 0;
-    right: ${({ open }) => (open ? 0 : '100%')};
+    height: 100vh;
     text-align: center;
     transition: all 1s ease;
-    background-color: ${({ open }) => (open ? '#000c' : 'none')};
+    background-color: ${({ open }) => (open ? '#000000f1' : 'initial')};
 
     @media only screen and (min-width: 1024px) {
         position: initial;
         display: flex;
         flex-direction: row;
         background-color: initial;
+        height: initial;
     }
 `
 
 const MenuItem = styled.a`
     font-size: 2rem;
     font-weight: bold;
-    padding: 1.3rem;
+    padding: 1.4rem;
 
     &:hover {
         background-color: #1118;

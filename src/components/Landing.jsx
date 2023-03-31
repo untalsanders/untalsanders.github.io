@@ -1,6 +1,6 @@
 'use strict'
 
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa'
 import { FcReading } from 'react-icons/fc'
 import styled from 'styled-components'
 
@@ -75,6 +75,10 @@ const SocialNetworkItem = styled.a`
     :nth-of-type(4) {
         color: #1c9cea;
     }
+
+    :nth-of-type(5) {
+        color: #e24364;
+    }
 `
 
 export default function Landing() {
@@ -99,6 +103,9 @@ export default function Landing() {
                     </SocialNetworkItem>
                     <SocialNetworkItem href="https://twitter.com/untalsanders" target="_blank">
                         <FaTwitter />
+                    </SocialNetworkItem>
+                    <SocialNetworkItem href="https://instagram.com/untalsanders" target="_blank">
+                        <FaInstagram />
                     </SocialNetworkItem>
                 </SocialNetwork>
             </LandingContent>

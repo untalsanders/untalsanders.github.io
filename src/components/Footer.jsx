@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Wrapper } from './Common'
 
 const FooterContainer = styled.footer`
-    background-color: #222;
+    background-color: #111;
     color: #e4e3e3;
     grid-row: 3;
 
