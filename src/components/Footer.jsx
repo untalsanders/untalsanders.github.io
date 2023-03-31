@@ -7,6 +7,7 @@ const FooterContainer = styled.footer`
     background-color: #222;
     color: #e4e3e3;
     grid-row: 3;
+    z-index: 1;
 
     div {
         padding: 1.2rem 0;
