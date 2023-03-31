@@ -72,7 +72,7 @@ export default function About() {
                         Nodejs. I have creativity to solve problems and adapt to different environments and cultures.
                         Ability to work in a team and manage interpersonal relationships.
                     </p>
-                    <CVButton href="/blog/resume">View CV</CVButton>
+                    <CVButton href="/resume">View CV</CVButton>
                 </div>
             </AboutWrapper>
         </AboutContainer>
