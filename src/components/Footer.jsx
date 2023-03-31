@@ -11,6 +11,11 @@ const FooterContainer = styled.footer`
     div {
         padding: 1.2rem 0;
         text-align: center;
+
+        a{
+            color: #f9af16;
+            font-weight: bold;
+        }
     }
 `
 
@@ -18,7 +23,7 @@ export default function Footer() {
     return (
         <FooterContainer>
             <Wrapper>
-                &copy; <a href="http://sandersgutierrez.github.io/blog">Sanders Gutiérrez</a> 2023. All rights reserved. Made with ❤ in 🇦🇷.
+                &copy; 2023 <a href="http://sandersgutierrez.github.io/blog">Sanders Gutiérrez</a>. All rights reserved. | Made with ❤ in 🇦🇷.
             </Wrapper>
         </FooterContainer>
     )

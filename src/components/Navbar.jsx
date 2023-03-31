@@ -10,7 +10,6 @@ const NavbarContainer = styled(Wrapper)`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 3.9rem;
     overflow-y: hidden;
 `
 
@@ -26,6 +25,7 @@ const MobileIcon = styled.div`
     display: flex;
     cursor: pointer;
     padding: 1.2rem;
+    z-index: 1;
 
     &:hover {
         color: #f9af16;
@@ -47,10 +47,9 @@ const Menu = styled.nav`
     justify-content: center;
     position: absolute;
     left: ${({ open }) => (open ? 0 : '-100%')};
-    top: 3.9rem;
+    top: 0;
     bottom: 0;
     right: ${({ open }) => (open ? 0 : '100%')};
-    background-color: #222;
     text-align: center;
     transition: all 1s ease;
     background-color: #222222f5;
@@ -65,6 +64,7 @@ const Menu = styled.nav`
 
 const MenuItem = styled.a`
     font-size: 2rem;
+    font-weight: bold;
     padding: 1.3rem;
 
     &:hover {
