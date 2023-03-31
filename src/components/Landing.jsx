@@ -10,11 +10,7 @@ const LandingContainer = styled.div`
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /* grid-row: 1 / 2; */
 `
 
 const LandingContent = styled.div`
@@ -27,6 +23,7 @@ const LandingContent = styled.div`
     font-weight: 200;
     text-align: center;
     height: 100vh;
+    width: 100vw;
     row-gap: min(0.6rem, 1.2rem);
 
     h2 {

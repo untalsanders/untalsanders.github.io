@@ -2,7 +2,6 @@
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Landing from '@/components/Landing'
 import Main from '@/components/Main'
 import Head from 'next/head'
 
@@ -17,9 +16,8 @@ export default function Home() {
                 <title>Inicio</title>
                 <link rel="icon" href="/blog/favicon.ico" />
             </Head>
-
             <Header />
-            <Landing />
+            <Main />
             <Footer />
         </>
     )

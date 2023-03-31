@@ -52,13 +52,13 @@ const Menu = styled.nav`
     right: ${({ open }) => (open ? 0 : '100%')};
     text-align: center;
     transition: all 1s ease;
-    background-color: #222222f5;
+    background-color: ${({ open }) => (open ? '#000c' : 'none')};
 
     @media only screen and (min-width: 1024px) {
         position: initial;
         display: flex;
         flex-direction: row;
-        background-color: none;
+        background-color: initial;
     }
 `
 
