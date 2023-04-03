@@ -2,19 +2,26 @@
 
 import styled from 'styled-components'
 import { Wrapper } from './Common'
+import { FaHeart } from 'react-icons/fa'
 
 const FooterContainer = styled.footer`
     background-color: #111;
     color: #e4e3e3;
     grid-row: 3;
+`
 
-    div {
-        padding: 1.2rem 0;
-        text-align: center;
+const FooterWrapper = styled(Wrapper)`
+    padding: 1.2rem 0;
+    text-align: center;
 
-        a{
-            color: #f9af16;
-            font-weight: bold;
+    a {
+        color: #f9af16;
+        font-weight: bold;
+    }
+
+    svg {
+        &:nth-of-type(1) {
+            color: red;
         }
     }
 `
@@ -22,10 +29,10 @@ const FooterContainer = styled.footer`
 export default function Footer() {
     return (
         <FooterContainer>
-            <Wrapper>
+            <FooterWrapper>
                 &copy; 2023 <a href="http://sandersgutierrez.github.io/">Sanders Gutiérrez</a>. All rights reserved. |
-                Made with ❤ in 🇦🇷.
-            </Wrapper>
+                Made with <FaHeart /> in 🇦🇷.
+            </FooterWrapper>
         </FooterContainer>
     )
 }

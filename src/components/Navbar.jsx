@@ -102,10 +102,10 @@ export default function Navbar() {
                 <MenuItem href="/#top" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     HOME
                 </MenuItem>
-                <MenuItem href="/#about-me" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#about" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     ABOUT ME
                 </MenuItem>
-                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#services" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     SERVICES
                 </MenuItem>
                 <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
@@ -114,7 +114,7 @@ export default function Navbar() {
                 <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     BLOG
                 </MenuItem>
-                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     CONTACT
                 </MenuItem>
             </Menu>

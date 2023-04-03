@@ -8,17 +8,11 @@ import { Wrapper } from './Common'
 const ServicesContainer = styled.section`
     background-color: #fccf8d;
     padding: clamp(4rem, 20vh, 8rem) 0;
-
-    h2 {
-        font-size: clamp(3vw, 3rem, 8rem);
-        font-weight: 800;
-        text-transform: uppercase;
-    }
 `
 
 const ServicesWrapper = styled(Wrapper)`
     & > :first-child {
-        padding-bottom: clamp(2rem, 20vh, 4rem);
+        padding-bottom: clamp(3rem, 20vh, 4rem);
     }
 `
 
@@ -26,6 +20,16 @@ const ServicesTitleSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h2 {
+        font-size: clamp(3vw, 3rem, 8rem);
+        font-weight: 800;
+    }
+
+    p {
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
 `
 
 const ServicesContentSection = styled.div`
