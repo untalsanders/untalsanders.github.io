@@ -13,7 +13,7 @@ const ContactWrapper = styled(Wrapper)`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: clamp(1.5rem, 4vh, 3rem);
+    row-gap: clamp(1.5rem, 4vh, 3rem);
 
     svg {
         background-color: #f9af16;

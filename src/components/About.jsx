@@ -9,40 +9,63 @@ const AboutContainer = styled.section`
 `
 
 const AboutWrapper = styled(Wrapper)`
+    & > :first-child {
+        padding-bottom: clamp(3rem, 20vh, 4rem);
+    }
+`
+
+const AboutTitleSection = styled.div`
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
     align-items: center;
-    text-align: center;
 
-    @media only screen and (min-width: 1024px) {
-        flex-direction: row;
-        column-gap: clamp(2rem, 4rem, 8rem);
-        text-align: initial;
+    h2 {
+        font-size: clamp(3vw, 3rem, 8rem);
+        font-weight: 800;
+    }
+
+    p {
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+`
+
+const AboutContentSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 3vw, 4rem) clamp(2rem, 3vh, 4rem);
+
+    @media only screen and (min-width: 64em) {
+        display: grid;
+        grid-template-columns: min(min-content, 30%) 1fr;
+        grid-template-rows: min-content min-content;
     }
 
     img {
         border-radius: 50%;
         border: clamp(2px, 4px, 1rem) solid #ccc;
         box-shadow: 0 0 1rem #111;
+        grid-column: 1 / 2;
+        grid-row: 1 / span 2;
     }
 
-    div {
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
+    p {
+        font-size: clamp(1rem, 1.4rem, 2rem);
+        font-weight: 300;
+        line-height: clamp(1.5rem, 2rem, 10vh);
+        text-align: center;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
 
-        h2 {
-            font-size: clamp(3vw, 3rem, 8rem);
-            font-weight: 800;
-            text-transform: uppercase;
+        @media only screen and (min-width: 64em) {
+            text-align: initial;
         }
+    }
 
-        p {
-            font-size: clamp(1rem, 1.4rem, 2rem);
-            font-weight: 300;
-            line-height: clamp(1.5rem, 2rem, 10vh);
-        }
+    a {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
     }
 `
 
@@ -54,6 +77,7 @@ const CVButton = styled.a`
     padding: 1rem;
     border-radius: 0.8rem;
     text-align: center;
+    width: 100%;
 
     &:hover {
         background-color: rgba(1, 1, 1, 0.75);
@@ -62,11 +86,14 @@ const CVButton = styled.a`
 
 export default function About() {
     return (
-        <AboutContainer id="about-me">
+        <AboutContainer id="about">
             <AboutWrapper>
-                <Image src="/images/avatar.png" alt="Avatar" width={340} height={340} />
-                <div>
-                    <h2>¿Who am I?</h2>
+                <AboutTitleSection>
+                    <h2>About Me</h2>
+                    <p>What you see is what I am</p>
+                </AboutTitleSection>
+                <AboutContentSection>
+                    <Image src="/images/avatar.png" alt="Avatar" width={300} height={300} />
                     <p>
                         My name is Sanders and I am a professional with a strong career in Software Engineering and a
                         growing interest in Artificial Intelligence and Machine Learning, with a passion for Physics and
@@ -75,7 +102,7 @@ export default function About() {
                         Ability to work in a team and manage interpersonal relationships.
                     </p>
                     <CVButton href="/resume">View CV</CVButton>
-                </div>
+                </AboutContentSection>
             </AboutWrapper>
         </AboutContainer>
     )

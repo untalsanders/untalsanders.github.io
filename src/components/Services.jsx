@@ -48,10 +48,6 @@ const ServicesCard = styled.section`
     gap: 1rem;
     text-align: center;
 
-    @media only screen and (min-width: 64em) {
-        /* text-align: initial; */
-    }
-
     svg {
         font-size: clamp(3rem, 8vw, 4rem);
     }
