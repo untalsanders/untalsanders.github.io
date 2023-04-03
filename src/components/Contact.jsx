@@ -55,10 +55,10 @@ export default function Contact() {
             <ContactWrapper>
                 <ContentTitleSection>
                     <h2>Contact</h2>
-                    <p>Let's do something together or share knowlegde.</p>
+                    <p>Let&apos;s do something together or share knowlegde.</p>
                 </ContentTitleSection>
                 <ContentContentSection>
-                    Drop me a line on <a href="mailto:ing.sanders@gmail.com">ing.sanders@gmail.com</a>, it doesn't
+                    Drop me a line on <a href="mailto:ing.sanders@gmail.com">ing.sanders@gmail.com</a>, it doesn&apos;t
                     matter if it is for an interview or just for a cup of coffee, I enjoy meeting new people.
                 </ContentContentSection>
                 <FaRegGrinWink />
