@@ -47,7 +47,7 @@ const AboutWrapper = styled(Wrapper)`
 `
 
 const CVButton = styled.a`
-    background-color: #111;
+    background-color: #222;
     color: white;
     font-size: clamp(1rem, 1.2rem, 2rem);
     font-weight: bold;
