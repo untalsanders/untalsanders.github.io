@@ -23,7 +23,8 @@ export default function Footer() {
     return (
         <FooterContainer>
             <Wrapper>
-                &copy; 2023 <a href="http://sandersgutierrez.github.io/blog">Sanders Gutiérrez</a>. All rights reserved. | Made with ❤ in 🇦🇷.
+                &copy; 2023 <a href="http://sandersgutierrez.github.io/">Sanders Gutiérrez</a>. All rights reserved. |
+                Made with ❤ in 🇦🇷.
             </Wrapper>
         </FooterContainer>
     )

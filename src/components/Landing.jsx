@@ -5,12 +5,11 @@ import { FcReading } from 'react-icons/fc'
 import styled from 'styled-components'
 
 const LandingContainer = styled.div`
-    background-image: url('/blog/images/bg-landing.jpg');
+    background-image: url('/images/bg-landing.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
-    /* grid-row: 1 / 2; */
 `
 
 const LandingContent = styled.div`
@@ -23,7 +22,6 @@ const LandingContent = styled.div`
     font-weight: 200;
     text-align: center;
     height: 100vh;
-    width: 100vw;
     row-gap: min(0.6rem, 1.2rem);
 
     h2 {
@@ -51,9 +49,9 @@ const LandingContent = styled.div`
 `
 
 const SocialNetwork = styled.div`
-    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-size: clamp(1.2rem, 2vw, 4rem);
     display: flex;
-    column-gap: min(2rem, 2rem);
+    column-gap: clamp(1.2rem, 2vw, min(4rem, 4rem));
     margin-top: 0.5em;
     color: black;
 `
@@ -66,6 +64,10 @@ const SocialNetworkItem = styled.a`
 
     :nth-of-type(1) {
         color: #0a66c2;
+    }
+
+    :nth-of-type(2) {
+        color: #000;
     }
 
     :nth-of-type(3) {

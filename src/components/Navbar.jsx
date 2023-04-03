@@ -1,10 +1,10 @@
 'use strict'
 
 import Image from 'next/image'
+import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components'
 import { Wrapper } from './Common'
-import { useState } from 'react'
 
 const NavbarContainer = styled(Wrapper)`
     display: flex;
@@ -19,12 +19,13 @@ const LogoContainer = styled.div`
     column-gap: 0.8rem;
     font-size: 1.125rem;
     font-weight: bold;
+    user-select: none;
 `
 
 const MobileIcon = styled.div`
     display: flex;
     cursor: pointer;
-    padding: 1.4rem;
+    padding: 1.4rem 0;
     z-index: 1;
 
     &:hover {
@@ -86,7 +87,7 @@ export default function Navbar() {
         <NavbarContainer>
             <LogoContainer>
                 <Image
-                    src="/blog/logotipo.svg"
+                    src="/logotipo.svg"
                     alt="Logotipo sandersgutierrez.github.io"
                     width={35}
                     height={35}
@@ -98,22 +99,22 @@ export default function Navbar() {
                 {showMobileMenu ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <Menu open={showMobileMenu}>
-                <MenuItem href="/blog#top" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#top" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     HOME
                 </MenuItem>
-                <MenuItem href="/blog#about-me" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#about-me" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     ABOUT ME
                 </MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     SERVICES
                 </MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     PORTFOLIO
                 </MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     BLOG
                 </MenuItem>
-                <MenuItem href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     CONTACT
                 </MenuItem>
             </Menu>
