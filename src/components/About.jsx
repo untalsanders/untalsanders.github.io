@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Wrapper } from './Common'
 
 const AboutContainer = styled.section`
-    padding: min(4rem, 4rem) 0;
+    padding: clamp(4rem, 20vh, 8rem) 0;
 `
 
 const AboutWrapper = styled(Wrapper)`

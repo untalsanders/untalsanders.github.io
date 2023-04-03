@@ -1,43 +1,105 @@
 'use strict'
 
+import { FaCode, FaTabletAlt } from 'react-icons/fa'
+import { HiWrenchScrewdriver } from 'react-icons/hi2'
+import styled from 'styled-components'
+import { Wrapper } from './Common'
+
+const ServicesContainer = styled.section`
+    background-color: #fccf8d;
+    padding: clamp(4rem, 20vh, 8rem) 0;
+
+    h2 {
+        font-size: clamp(3vw, 3rem, 8rem);
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+`
+
+const ServicesWrapper = styled(Wrapper)`
+    & > :first-child {
+        padding-bottom: clamp(2rem, 20vh, 4rem);
+    }
+`
+
+const ServicesTitleSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+const ServicesContentSection = styled.div`
+    display: grid;
+    gap: 3rem;
+
+    @media only screen and (min-width: 64em) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+`
+
+const ServicesCard = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+
+    @media only screen and (min-width: 64em) {
+        /* text-align: initial; */
+    }
+
+    svg {
+        font-size: clamp(3rem, 8vw, 4rem);
+    }
+
+    h3 {
+        font-size: clamp(1rem, 1.4rem, 2rem);
+    }
+
+    p {
+        font-size: clamp(1rem, 1.4rem, 2rem);
+        font-weight: 300;
+    }
+`
+
 export default function Services() {
     return (
-        <section id="services">
-            <div className="container">
-                <div>
-                    <h2>¿Qué hago?</h2>
-                    <p>A esto me dedico diariamente</p>
-                </div>
-                <div>
-                    <div>
-                        <i className="fa fa-code"></i>
-                        <h3>Desarrollo Web</h3>
+        <ServicesContainer id="services">
+            <ServicesWrapper>
+                <ServicesTitleSection>
+                    <h2>What I do</h2>
+                    <p>I dedicate myself to this daily</p>
+                </ServicesTitleSection>
+                <ServicesContentSection>
+                    <ServicesCard>
+                        <FaCode />
+                        <h3>Software Development</h3>
                         <p>
-                            Obtenga un diseño optimizado y alineado con la identidad visual de su marca, planeado desde
-                            la usabilidad y hágase más visible ante sus públicos a través de un diseño amigable
-                            optimizado para motores de búsqueda.
+                            Get an optimized design aligned with the visual identity of your brand, planned from
+                            usability and become more visible to your audiences through a friendly design optimized for
+                            search engines.
                         </p>
-                    </div>
-                    <div>
-                        <i className="fa fa-tablet"></i>
-                        <h3>Apps Móviles</h3>
+                    </ServicesCard>
+                    <ServicesCard>
+                        <FaTabletAlt />
+                        <h3>Mobile Development</h3>
                         <p>
-                            Alínee las tendencias móviles actuales, para mejorar sus procesos y aumentar el nivel de
-                            accesibilidad y visibilidad de sus clientes, permitiendo construir una lealtad con su
-                            público objetivo, ya que pueden estar frente a su negocio en todo momento.
+                            Align current mobile trends, to improve your processes and increase the level of
+                            accessibility and visibility of your customers, allowing you to build loyalty with your
+                            target audience, since they can be in front of your business at all times.
                         </p>
-                    </div>
-                    <div>
-                        <i className="fa fa-wrench"></i>
-                        <h3>Consultoría</h3>
+                    </ServicesCard>
+                    <ServicesCard>
+                        <HiWrenchScrewdriver />
+                        <h3>Consultancy</h3>
                         <p>
-                            Asegure el perfecto funcionamiento de su empresa, a través de una consultoría informática
-                            especializada, que va desde análisis de redes de datos hasta el análisis y mantenimiento
-                            correctivo y preventivo de equipos de redes y cómputo.
+                            Ensure the perfect functioning of your company, through a specialized computer consultancy,
+                            which ranges from the analysis of requirements to the analysis and corrective and preventive
+                            maintenance of your computer applications.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </ServicesCard>
+                </ServicesContentSection>
+            </ServicesWrapper>
+        </ServicesContainer>
     )
 }
