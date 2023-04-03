@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { Wrapper } from './Common'
 
 const AboutContainer = styled.section`
-    /* background-color: #3bb4c1; */
     padding: min(4rem, 4rem) 0;
 `
 
