@@ -34,7 +34,7 @@ const AboutContentSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(1rem,4vw,2rem);
+    column-gap: clamp(2rem,4vw,8rem);
 
     @media only screen and (min-width: 64em) {
         display: grid;
