@@ -111,7 +111,7 @@ export default function Navbar() {
                 <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     PORTFOLIO
                 </MenuItem>
-                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/blog" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     BLOG
                 </MenuItem>
                 <MenuItem href="/#contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>
