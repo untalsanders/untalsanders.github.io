@@ -1,8 +1,8 @@
 'use strict'
 
-import styled from 'styled-components'
 import { Wrapper } from './Common'
 import { FaHeart } from 'react-icons/fa'
+import styled from 'styled-components'
 
 const FooterContainer = styled.footer`
     background-color: #111;
@@ -26,7 +26,7 @@ const FooterWrapper = styled(Wrapper)`
     }
 `
 
-export default function Footer() {
+export function Footer() {
     return (
         <FooterContainer>
             <FooterWrapper>

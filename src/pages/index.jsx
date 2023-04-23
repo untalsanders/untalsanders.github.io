@@ -1,18 +1,25 @@
 'use strict'
 
-import About from '@/components/About'
-import Contact from '@/components/Contact'
-import DefaultLayout from '@/components/DefaultLayout'
-import Landing from '@/components/Landing'
-import Services from '@/components/Services'
+import { About, Articles, Contact, Landing, LayoutLanding, Services } from '@/components'
+import { getPosts } from '@/libs/mdx'
 
-export default function Home() {
+export default function Home({ posts }) {
     return (
-        <DefaultLayout>
+        <LayoutLanding>
             <Landing />
             <About />
             <Services />
+            <Articles posts={posts} />
             <Contact />
-        </DefaultLayout>
+        </LayoutLanding>
     )
+}
+
+export async function getStaticProps() {
+    const posts = getPosts().slice(0, 1)
+    return {
+        props: {
+            posts,
+        },
+    }
 }

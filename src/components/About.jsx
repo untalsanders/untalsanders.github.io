@@ -1,8 +1,8 @@
 'use strict'
 
+import { Wrapper } from './Common'
 import Image from 'next/image'
 import styled from 'styled-components'
-import { Wrapper } from './Common'
 
 const AboutContainer = styled.section`
     padding: clamp(4rem, 20vh, 8rem) 0;
@@ -85,7 +85,7 @@ const CVButton = styled.a`
     }
 `
 
-export default function About() {
+export function About() {
     return (
         <AboutContainer id="about">
             <AboutWrapper>

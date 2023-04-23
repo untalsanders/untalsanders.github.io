@@ -83,7 +83,7 @@ const SocialNetworkItem = styled.a`
     }
 `
 
-export default function Landing() {
+export function Landing() {
     return (
         <LandingContainer>
             <LandingContent>

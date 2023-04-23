@@ -7,11 +7,11 @@ import { serialize } from 'next-mdx-remote/serialize'
 
 const root = process.cwd()
 
-export const getFiles = () => readdirSync(join(root, 'data'))
+export const getFiles = () => readdirSync(join(root, 'content'))
 
-export const getFile = slug => readFileSync(join(root, 'data', slug), 'utf-8')
+export const getFile = slug => readFileSync(join(root, 'content', slug), 'utf-8')
 
-export const getFileBySlug = async (slug) => {
+export async function getPost(slug) {
     const mdxSource = getFile(`${slug}.mdx`)
     const { data, content } = await matter(mdxSource)
     const source = await serialize(content, {})
@@ -25,7 +25,7 @@ export const getFileBySlug = async (slug) => {
     }
 }
 
-export const getAllFilesFrontMatter = () => {
+export function getPosts() {
     return getFiles().reduce((posts, slug) => {
         const mdxSource = getFile(slug)
         const { data } = matter(mdxSource)

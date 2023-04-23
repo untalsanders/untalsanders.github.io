@@ -1,10 +1,10 @@
 'use strict'
 
+import { Wrapper } from './Common'
 import Image from 'next/image'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components'
-import { Wrapper } from './Common'
 
 const NavbarContainer = styled(Wrapper)`
     display: flex;
@@ -80,7 +80,7 @@ const MenuItem = styled.a`
     }
 `
 
-export default function Navbar() {
+export function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
     return (
@@ -111,7 +111,7 @@ export default function Navbar() {
                 <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     PORTFOLIO
                 </MenuItem>
-                <MenuItem href="/blog" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#articles" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     BLOG
                 </MenuItem>
                 <MenuItem href="/#contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>

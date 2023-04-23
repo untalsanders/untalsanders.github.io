@@ -1,9 +1,9 @@
 'use strict'
 
+import { Wrapper } from './Common'
 import { FaCode, FaTabletAlt } from 'react-icons/fa'
 import { HiWrenchScrewdriver } from 'react-icons/hi2'
 import styled from 'styled-components'
-import { Wrapper } from './Common'
 
 const ServicesContainer = styled.section`
     background-color: #fccf8d;
@@ -62,7 +62,7 @@ const ServicesCard = styled.section`
     }
 `
 
-export default function Services() {
+export function Services() {
     return (
         <ServicesContainer id="services">
             <ServicesWrapper>

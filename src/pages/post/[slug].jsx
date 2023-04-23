@@ -1,20 +1,20 @@
-import DefaultLayout from '@/components/DefaultLayout'
+import { LayoutLanding } from '@/components'
 import { Wrapper } from '@/components/Common'
-import { getFileBySlug, getFiles } from 'lib/mdx'
+import { getFiles, getPost } from '@/libs/mdx'
 import { MDXRemote } from 'next-mdx-remote'
 
 export default function Post({ source, frontmatter }) {
     return (
-        <DefaultLayout>
+        <LayoutLanding>
             <Wrapper>
                 <MDXRemote {...source} />
             </Wrapper>
-        </DefaultLayout>
+        </LayoutLanding>
     )
 }
 
 export async function getStaticProps({ params }) {
-    const { source, frontmatter } = await getFileBySlug(params.slug)
+    const { source, frontmatter } = await getPost(params.slug)
     return {
         props: { source, frontmatter },
     }

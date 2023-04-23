@@ -1,8 +1,8 @@
 'use strict'
 
-import styled from 'styled-components'
 import { Wrapper } from './Common'
 import { FaRegGrinWink } from 'react-icons/fa'
+import styled from 'styled-components'
 
 const ContactContainer = styled.section`
     padding: clamp(4rem, 20vh, 8rem) 0;
@@ -49,7 +49,7 @@ const ContentContentSection = styled.div`
     }
 `
 
-export default function Contact() {
+export function Contact() {
     return (
         <ContactContainer id="contact">
             <ContactWrapper>

@@ -6,6 +6,6 @@ const MainContainer = styled.main`
     grid-row: 2;
 `
 
-export default function Main(props) {
+export function Main(props) {
     return <MainContainer>{props.children}</MainContainer>
 }

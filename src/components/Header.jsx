@@ -1,7 +1,7 @@
 'use strict'
 
+import { Navbar } from '@/components'
 import styled from 'styled-components'
-import Navbar from './Navbar'
 
 const HeaderContainer = styled.header`
     background-color: #111;
@@ -10,7 +10,7 @@ const HeaderContainer = styled.header`
     border-bottom: 1px solid #f9af16;
 `
 
-export default function Header() {
+export function Header() {
     return (
         <HeaderContainer>
             <Navbar />
