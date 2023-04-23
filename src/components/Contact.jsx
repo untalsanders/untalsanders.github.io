@@ -6,6 +6,8 @@ import styled from 'styled-components'
 
 const ContactContainer = styled.section`
     padding: clamp(4rem, 20vh, 8rem) 0;
+    background-color: #222;
+    color: white;
 `
 
 const ContactWrapper = styled(Wrapper)`
