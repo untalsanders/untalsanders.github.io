@@ -106,9 +106,6 @@ export function Landing() {
                     <SocialNetworkItem href="https://twitter.com/untalsanders" target="_blank">
                         <FaTwitter />
                     </SocialNetworkItem>
-                    <SocialNetworkItem href="https://instagram.com/untalsanders" target="_blank">
-                        <FaInstagram />
-                    </SocialNetworkItem>
                 </SocialNetwork>
             </LandingContent>
         </LandingContainer>
