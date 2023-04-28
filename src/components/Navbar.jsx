@@ -108,9 +108,9 @@ export function Navbar() {
                 <MenuItem href="/#services" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     SERVICES
                 </MenuItem>
-                <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                {/* <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     PORTFOLIO
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem href="/#articles" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     BLOG
                 </MenuItem>
