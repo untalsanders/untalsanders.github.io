@@ -1,9 +1,28 @@
 'use strict'
 
 import { Footer, Header, Main } from '@/components'
+import { ButtonGoToUp } from '@/components/ButtonGoToUp'
 import Head from 'next/head'
+import { useEffect, useRef, useState } from 'react'
+import { FaArrowUp } from 'react-icons/fa'
 
 export function LayoutLanding(props) {
+    const [active, setActive] = useState('')
+
+    useEffect(() => {
+        if (!(typeof window != 'undefined')) {
+            throw new Error('The object window is not defined')
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                setActive('active')
+            } else {
+                setActive('')
+            }
+        })
+    }, [])
+
     return (
         <>
             <Head>
@@ -15,6 +34,9 @@ export function LayoutLanding(props) {
             </Head>
             <Header />
             <Main>{props.children}</Main>
+            <ButtonGoToUp href='/#top' className={active}>
+                <FaArrowUp />
+            </ButtonGoToUp>
             <Footer />
         </>
     )
