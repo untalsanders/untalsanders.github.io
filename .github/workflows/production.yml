@@ -1,9 +1,6 @@
 name: Deploy site to GitHub Pages
 
 on:
-  push:
-    branches:
-      - 'releases/**'
   release:
     types: [published]
   workflow_dispatch:
@@ -72,7 +69,7 @@ jobs:
 
   deploy:
     environment:
-      name: staging
+      name: production
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
