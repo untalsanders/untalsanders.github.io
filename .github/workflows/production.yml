@@ -1,8 +1,11 @@
-name: Deploy site to GitHub Pages
+name: (Production) - Deploy site to GitHub Pages
 
 on:
-  release:
-    types: [published]
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -16,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
