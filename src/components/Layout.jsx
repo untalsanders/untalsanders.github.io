@@ -6,7 +6,7 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { FaArrowUp } from 'react-icons/fa'
 
-export function Layout(props) {
+export function Layout({children}) {
     const [active, setActive] = useState('')
 
     useEffect(() => {
@@ -14,13 +14,7 @@ export function Layout(props) {
             throw new Error('The object window is not defined')
         }
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                setActive('active')
-            } else {
-                setActive('')
-            }
-        })
+        window.addEventListener('scroll', () => window.scrollY > 100 ? setActive('active') : setActive(''))
     }, [])
 
     return (
@@ -30,10 +24,10 @@ export function Layout(props) {
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Personal website" />
-                <title>Inicio</title>
+                <title>Home</title>
             </Head>
             <Header />
-            <Main>{props.children}</Main>
+            <Main>{children}</Main>
             <ButtonGoToUp href='/#top' className={active}>
                 <FaArrowUp />
             </ButtonGoToUp>

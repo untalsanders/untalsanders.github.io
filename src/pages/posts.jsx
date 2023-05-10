@@ -1,13 +1,13 @@
 'use strict'
 
-import { LayoutLanding } from '@/components'
+import { Layout } from '@/components'
 import { Wrapper } from '@/components/Common'
 import { getPosts } from '@/libs/mdx'
 import Link from 'next/link'
 
 export default function Blog({ posts }) {
     return (
-        <LayoutLanding>
+        <Layout>
             <Wrapper>
                 <h1>Latest Posts</h1>
                 {posts.map(post => (
@@ -17,7 +17,7 @@ export default function Blog({ posts }) {
                     </Link>
                 ))}
             </Wrapper>
-        </LayoutLanding>
+        </Layout>
     )
 }
 
