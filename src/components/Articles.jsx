@@ -39,9 +39,11 @@ export function Articles({ posts }) {
                     <p>These are my latest articles. <strong><Link href="/posts/">View all posts.</Link></strong></p>
                 </ArticlesTitleSection>
                 {posts.map(post => (
-                    <Link key={post.slug} href={`/post/${post.slug}`}>
-                        <h2>{post.title}</h2>
-                        <p>{post.date}</p>
+                    <Link key={post.slug} href={`/posts/${post.slug}`}>
+                        <article>
+                            <h2>{post.title}</h2>
+                            <p>{post.date}</p>
+                        </article>
                     </Link>
                 ))}
             </ArticlesWrapper>
