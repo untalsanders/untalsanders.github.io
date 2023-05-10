@@ -66,6 +66,7 @@ const Menu = styled.nav`
 `
 
 const MenuItem = styled.a`
+    color: white;
     font-size: 2rem;
     font-weight: bold;
     padding: 1.4rem;
@@ -108,10 +109,7 @@ export function Navbar() {
                 <MenuItem href="/#services" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     SERVICES
                 </MenuItem>
-                {/* <MenuItem href="/#" onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                    PORTFOLIO
-                </MenuItem> */}
-                <MenuItem href="/#articles" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/posts" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                     BLOG
                 </MenuItem>
                 <MenuItem href="/#contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>
