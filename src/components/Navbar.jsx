@@ -87,13 +87,7 @@ export function Navbar() {
     return (
         <NavbarContainer>
             <LogoContainer>
-                <Image
-                    src="/logotipo.svg"
-                    alt="Logotipo sandersgutierrez.github.io"
-                    width={35}
-                    height={35}
-                    priority
-                />
+                <Image src="/logotipo.svg" alt="Logotipo sandersgutierrez.github.io" width={35} height={35} priority />
                 <span>Sanders Gutiérrez</span>
             </LogoContainer>
             <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>

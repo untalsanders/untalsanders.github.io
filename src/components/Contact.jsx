@@ -41,7 +41,7 @@ const ContentTitleSection = styled.div`
 `
 
 const ContentContentSection = styled.div`
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 2rem);
     font-weight: 200;
     line-height: clamp(2rem, 4vw, 2rem);
 
