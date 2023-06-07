@@ -4,7 +4,6 @@ import { Footer, Header, Main } from '@/components'
 import { ScrollToUpButton } from '@/components/ScrollToUpButton'
 import Head from 'next/head'
 
-
 export function Layout({ children }) {
     return (
         <>
@@ -19,8 +18,8 @@ export function Layout({ children }) {
             <div className="app">
                 <Header />
                 <Main>{children}</Main>
-                <ScrollToUpButton />
                 <Footer />
+                <ScrollToUpButton />
             </div>
         </>
     )

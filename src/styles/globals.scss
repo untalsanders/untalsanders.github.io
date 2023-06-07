@@ -3,12 +3,6 @@
 @import './variables';
 @import './fonts';
 
-* {
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
-}
-
 *,
 *:before,
 *:after {
@@ -29,7 +23,6 @@ body {
     font-weight: 400;
     min-height: 100vh;
     max-width: 100vw;
-    min-width: 23.4rem;
     overflow-x: hidden;
     color: #222;
     background-color: #fff;
@@ -37,7 +30,6 @@ body {
 
 a {
     cursor: pointer;
-    user-select: none;
     text-decoration: none;
 
     &:hover {

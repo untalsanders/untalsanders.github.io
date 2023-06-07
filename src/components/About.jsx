@@ -73,6 +73,7 @@ const AboutContentSection = styled.div`
 const CVButton = styled.a`
     background-color: #222;
     color: white;
+    user-select: none;
     font-size: clamp(1rem, 1.2rem, 2rem);
     font-weight: bold;
     padding: 1rem;

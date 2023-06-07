@@ -1,8 +1,9 @@
 'use strict'
 
+import Link from 'next/link'
 import { Wrapper } from './Common'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components'
 
@@ -65,8 +66,9 @@ const Menu = styled.nav`
     }
 `
 
-const MenuItem = styled.a`
+const MenuItem = styled(Link)`
     color: white;
+    user-select: none;
     font-size: 2rem;
     font-weight: bold;
     padding: 1.4rem;
@@ -83,6 +85,21 @@ const MenuItem = styled.a`
 
 export function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
+    const [shadow, setShadow] = useState(false)
+
+    const handleClick = () => {
+        setShowMobileMenu(!showMobileMenu)
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.screenY >= 90) {
+                setShadow(true)
+            } else[
+                setShadow(false)
+            ]
+        })
+    }, [])
 
     return (
         <NavbarContainer>
@@ -90,23 +107,23 @@ export function Navbar() {
                 <Image src="/logotipo.svg" alt="Logotipo sandersgutierrez.github.io" width={35} height={35} priority />
                 <span>Sanders Gutiérrez</span>
             </LogoContainer>
-            <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            <MobileIcon onClick={handleClick}>
                 {showMobileMenu ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <Menu open={showMobileMenu}>
-                <MenuItem href="/#top" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/" onClick={handleClick}>
                     HOME
                 </MenuItem>
-                <MenuItem href="/#about" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#about" onClick={handleClick}>
                     ABOUT ME
                 </MenuItem>
-                <MenuItem href="/#services" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#services" onClick={handleClick}>
                     SERVICES
                 </MenuItem>
-                <MenuItem href="/posts" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/posts" onClick={handleClick}>
                     BLOG
                 </MenuItem>
-                <MenuItem href="/#contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <MenuItem href="/#contact" onClick={handleClick}>
                     CONTACT
                 </MenuItem>
             </Menu>
