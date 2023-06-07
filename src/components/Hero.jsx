@@ -1,18 +1,18 @@
 'use strict'
 
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa'
 import { FcReading } from 'react-icons/fc'
 import styled from 'styled-components'
 
-const LandingContainer = styled.div`
-    background-image: url('/images/bg-landing.jpg');
+const HeroContainer = styled.div`
+    background-image: url('/images/bg-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
 `
 
-const LandingContent = styled.div`
+const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,10 +83,10 @@ const SocialNetworkItem = styled.a`
     }
 `
 
-export function Landing() {
+export function Hero() {
     return (
-        <LandingContainer>
-            <LandingContent>
+        <HeroContainer>
+            <HeroContent>
                 <h3>Hi, I&apos;m</h3>
                 <h2>SOFTWARE ENGINEER</h2>
                 <span>
@@ -107,7 +107,7 @@ export function Landing() {
                         <FaTwitter />
                     </SocialNetworkItem>
                 </SocialNetwork>
-            </LandingContent>
-        </LandingContainer>
+            </HeroContent>
+        </HeroContainer>
     )
 }

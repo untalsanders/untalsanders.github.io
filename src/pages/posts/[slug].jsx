@@ -1,15 +1,12 @@
-import { LayoutLanding } from '@/components'
 import { Wrapper } from '@/components/Common'
 import { getFiles, getPost } from '@/libs/mdx'
 import { MDXRemote } from 'next-mdx-remote'
 
 export default function Post({ source, frontmatter }) {
     return (
-        <LayoutLanding>
-            <Wrapper>
-                <MDXRemote {...source} />
-            </Wrapper>
-        </LayoutLanding>
+        <Wrapper>
+            <MDXRemote {...source} />
+        </Wrapper>
     )
 }
 

@@ -3,7 +3,7 @@ name: (Production) - Deploy site to GitHub Pages
 on:
   pull_request:
     types:
-      - closed
+      - synchronize
     branches:
       - main
   workflow_dispatch:
@@ -14,12 +14,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,7 +43,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '18'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
