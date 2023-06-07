@@ -10,6 +10,7 @@ const HeroContainer = styled.div`
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
+    padding-top: 0 !important;
 `
 
 const HeroContent = styled.div`

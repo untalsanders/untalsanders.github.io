@@ -1,7 +1,6 @@
 'use strict'
 
-import { Footer, Header, Main } from '@/components'
-import { ScrollToUpButton } from '@/components/ScrollToUpButton'
+import { Footer, Header, Main, ScrollToUpButton } from '@/components'
 import Head from 'next/head'
 
 export function Layout({ children }) {
@@ -15,12 +14,10 @@ export function Layout({ children }) {
                 <link rel="icon" href="/favicon.ico" />
                 <title>Home | Sanders Gutiérrez</title>
             </Head>
-            <div className="app">
-                <Header />
-                <Main>{children}</Main>
-                <Footer />
-                <ScrollToUpButton />
-            </div>
+            <Header />
+            <Main>{children}</Main>
+            <Footer />
+            <ScrollToUpButton />
         </>
     )
 }
