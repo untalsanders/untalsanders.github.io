@@ -29,6 +29,12 @@ const ContentTitleSection = styled.div`
     flex-direction: column;
     align-items: center;
 
+    h2,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
     h2 {
         font-size: clamp(3vw, 3rem, 8rem);
         font-weight: 800;
@@ -41,9 +47,7 @@ const ContentTitleSection = styled.div`
 `
 
 const ContentContentSection = styled.div`
-    font-size: clamp(1rem, 1.2vw, 2rem);
-    font-weight: 200;
-    line-height: clamp(2rem, 4vw, 2rem);
+    font-size: clamp(1rem, 1.5rem, 2rem);
 
     a {
         color: #ef2d56;

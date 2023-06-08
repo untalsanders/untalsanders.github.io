@@ -25,6 +25,11 @@ const HeroContent = styled.div`
     height: 100vh;
     row-gap: min(0.6rem, 1.2rem);
 
+    h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
+
     h2 {
         font-size: clamp(2rem, 4vw, 8rem);
         font-weight: 900;

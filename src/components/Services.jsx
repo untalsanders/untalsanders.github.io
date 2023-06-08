@@ -12,7 +12,7 @@ const ServicesContainer = styled.section`
 
 const ServicesWrapper = styled(Wrapper)`
     & > :first-child {
-        padding-bottom: clamp(3rem, 20vh, 4rem);
+        padding-bottom: clamp(4rem, 20vh, 4rem);
     }
 `
 
@@ -20,6 +20,12 @@ const ServicesTitleSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h2,
+    p {
+        margin: 0;
+        padding: 0;
+    }
 
     h2 {
         font-size: clamp(3vw, 3rem, 8rem);
@@ -34,7 +40,7 @@ const ServicesTitleSection = styled.div`
 
 const ServicesContentSection = styled.div`
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
 
     @media only screen and (min-width: 64em) {
         grid-template-columns: repeat(3, 1fr);
@@ -45,11 +51,17 @@ const ServicesCard = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
     text-align: center;
 
     svg {
         font-size: clamp(3rem, 8vw, 4rem);
+    }
+
+    h3,
+    p {
+        margin: 0;
+        padding: 0;
     }
 
     h3 {
@@ -59,6 +71,7 @@ const ServicesCard = styled.section`
     p {
         font-size: clamp(1rem, 1.4rem, 2rem);
         font-weight: 300;
+        line-height: clamp(1.5rem, 2rem, 10vh);
     }
 `
 
