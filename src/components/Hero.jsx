@@ -10,6 +10,7 @@ const HeroContainer = styled.div`
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
+    padding-top: 0 !important;
 `
 
 const HeroContent = styled.div`
@@ -23,6 +24,11 @@ const HeroContent = styled.div`
     text-align: center;
     height: 100vh;
     row-gap: min(0.6rem, 1.2rem);
+
+    h2, h3 {
+        margin: 0;
+        padding: 0;
+    }
 
     h2 {
         font-size: clamp(2rem, 4vw, 8rem);

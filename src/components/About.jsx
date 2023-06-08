@@ -19,6 +19,12 @@ const AboutTitleSection = styled.div`
     flex-direction: column;
     align-items: center;
 
+    h2,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
     h2 {
         font-size: clamp(3vw, 3rem, 8rem);
         font-weight: 800;

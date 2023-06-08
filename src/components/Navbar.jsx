@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Wrapper } from './Common'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styled from 'styled-components'
 
@@ -85,21 +85,10 @@ const MenuItem = styled(Link)`
 
 export function Navbar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
-    const [shadow, setShadow] = useState(false)
 
     const handleClick = () => {
         setShowMobileMenu(!showMobileMenu)
     }
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if (window.screenY >= 90) {
-                setShadow(true)
-            } else[
-                setShadow(false)
-            ]
-        })
-    }, [])
 
     return (
         <NavbarContainer>

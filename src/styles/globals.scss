@@ -3,9 +3,7 @@
 @import './variables';
 @import './fonts';
 
-*,
-*:before,
-*:after {
+html, body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -18,7 +16,7 @@ html {
 }
 
 body {
-    font-family: $font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font-family, system-ui, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: $font-size;
     font-weight: 400;
     min-height: 100vh;
@@ -44,8 +42,54 @@ video {
     object-fit: cover;
 }
 
-.app {
+#__next {
     display: grid;
     grid-template-rows: min-content auto min-content;
     min-height: 100vh;
+}
+
+.mb-4 {
+    margin-bottom: 6rem;
+}
+
+.list-posts {
+    display: grid;
+    gap: 2rem;
+
+    @media only screen and (min-width: 64em) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    article {
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 2rem;
+        padding: 1.5rem;
+
+        picture {
+            img {
+                border-radius: 1rem;
+                width: 100%;
+            }
+        }
+
+        div {
+            h2 {
+                a {
+                    color: inherit;
+                    font-weight: 900;
+                }
+            }
+
+            p {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+    }
+
 }
