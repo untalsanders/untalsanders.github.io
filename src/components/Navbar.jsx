@@ -21,6 +21,11 @@ const LogoContainer = styled.div`
     font-size: 1.125rem;
     font-weight: bold;
     user-select: none;
+
+    img {
+        width: min(35px, 45px);
+        height: min(35px, 45px);
+    }
 `
 
 const MobileIcon = styled.div`
