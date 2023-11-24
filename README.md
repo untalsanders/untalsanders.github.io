@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
     <h1> :rocket: Sanders Gutiérrez :rocket: </h1>
     <h3> :zap: Personal Website :zap:️ </h3>
 </div>
