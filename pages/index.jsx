@@ -1,7 +1,7 @@
 'use strict'
 
-import { About, Articles, Contact, Hero, Services } from '@/components'
-import { getPosts } from '@/libs/mdx'
+import { About, Articles, Contact, Hero, Services } from '@/components/index.js'
+import { getPosts } from '@/libs/mdx.js'
 
 export default function Home({ posts }) {
     return (

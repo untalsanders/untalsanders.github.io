@@ -1,7 +1,7 @@
 'use strict'
 
 import Link from 'next/link'
-import { Wrapper } from './Common'
+import { Wrapper } from './Common.jsx'
 import Image from 'next/image'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'

@@ -1,6 +1,6 @@
 'use strict'
 
-import { Navbar } from '@/components'
+import { Navbar } from './index.js'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.header`

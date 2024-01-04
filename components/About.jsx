@@ -1,6 +1,6 @@
 'use strict'
 
-import { Wrapper } from './Common'
+import { Wrapper } from './Common.jsx'
 import Image from 'next/image'
 import styled from 'styled-components'
 

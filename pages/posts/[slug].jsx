@@ -1,8 +1,8 @@
-import { Wrapper } from '@/components/Common'
-import { getFiles, getPost } from '@/libs/mdx'
+import { Wrapper } from '@/components/Common.jsx'
+import { getFiles, getPost } from '@/libs/mdx.js'
 import { MDXRemote } from 'next-mdx-remote'
 
-export default function Post({ source, frontmatter }) {
+export default function Post({ source }) {
     return (
         <Wrapper>
             <MDXRemote {...source} />

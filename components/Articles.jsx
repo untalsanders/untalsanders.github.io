@@ -1,6 +1,6 @@
 'use strict'
 
-import { Wrapper } from '@/components/Common'
+import { Wrapper } from './Common.jsx'
 import Link from 'next/link'
 import styled from 'styled-components'
 import { FaCalendar, FaUser } from 'react-icons/fa'
@@ -46,7 +46,7 @@ export function Articles({ posts }) {
                     <p>
                         These are my latest articles.{' '}
                         <strong>
-                            <Link href="/posts/">View all posts.</Link>
+                            <Link href="/posts">View all posts.</Link>
                         </strong>
                     </p>
                 </ArticlesTitleSection>

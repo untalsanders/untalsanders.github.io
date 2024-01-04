@@ -1,7 +1,7 @@
 'use strict'
 
-import { Wrapper } from '@/components/Common'
-import { getPosts } from '@/libs/mdx'
+import { Wrapper } from '@/components/Common.jsx'
+import { getPosts } from '@/libs/mdx.js'
 import Link from 'next/link'
 import { FaCalendar, FaUser } from 'react-icons/fa'
 

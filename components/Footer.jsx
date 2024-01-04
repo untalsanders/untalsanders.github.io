@@ -1,6 +1,6 @@
 'use strict'
 
-import { Wrapper } from './Common'
+import { Wrapper } from './Common.jsx'
 import { FaHeart } from 'react-icons/fa'
 import styled from 'styled-components'
 

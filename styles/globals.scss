@@ -1,7 +1,11 @@
 @use 'sass:map';
 
-@import './variables';
-@import './fonts';
+@import 'variables';
+@import 'fonts';
+
+html {
+    scroll-behavior: smooth;
+}
 
 html, body {
     box-sizing: border-box;

@@ -1,9 +1,9 @@
 'use strict'
 
-import { Footer, Header, Main, ScrollToUpButton } from '@/components'
+import { Footer, Header, Main, ScrollToUpButton } from './index.js'
 import Head from 'next/head'
 
-export function Layout({ children }) {
+export function PageLayout({ children }) {
     return (
         <>
             <Head>
