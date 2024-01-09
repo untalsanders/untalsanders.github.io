@@ -1,11 +1,11 @@
 {
-    "name": "sandersgutierrez-site",
+    "name": "untalsanders-site",
     "private": true,
     "version": "0.1.0",
     "author": {
         "name": "Sanders Gutiérrez",
         "email": "ing.sanders@gmail.com",
-        "url": "https://sandersgutierrez.github.io"
+        "url": "https://untalsanders.github.io"
     },
     "scripts": {
         "dev": "next dev",
