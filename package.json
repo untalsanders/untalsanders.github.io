@@ -2,11 +2,7 @@
     "name": "untalsanders-site",
     "private": true,
     "version": "0.1.0",
-    "author": {
-        "name": "Sanders Gutiérrez",
-        "email": "ing.sanders@gmail.com",
-        "url": "https://untalsanders.github.io"
-    },
+    "author": "Sanders Gutiérrez <ing.sanders@gmail.com> (https://untalsanders.github.io)",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -23,7 +19,7 @@
         "eslint": "8.35.0",
         "eslint-config-next": "13.2.1",
         "gray-matter": "4.0.3",
-        "next": "14.0.3",
+        "next": "14.1.3",
         "next-mdx-remote": "4.4.1",
         "normalize.css": "8.0.1",
         "react": "18.2.0",
