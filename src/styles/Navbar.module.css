@@ -1,0 +1,13 @@
+.Navbar {
+    display: none;
+
+    @media screen and (min-width: 57.5rem) {
+        display: flex;
+        align-items: center;
+    }
+
+    > * {
+        padding: .5rem 1rem;
+        transition: color 200ms ease-in;
+    }
+}
