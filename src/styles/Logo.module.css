@@ -17,6 +17,10 @@
     font-size: 1.5rem;
     font-weight: 900;
 
+    &:hover {
+        color: #00d7ff;
+    }
+
     > span {
         color: rgb(255, 128, 0);
     }

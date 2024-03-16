@@ -9,5 +9,9 @@
     > * {
         padding: .5rem 1rem;
         transition: color 200ms ease-in;
+
+        &:hover {
+            color: #00d7ff;
+        }
     }
 }

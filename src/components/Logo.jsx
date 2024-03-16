@@ -10,7 +10,7 @@ export function Logo() {
     return (
         <div className={styles.Logo}>
             <Link to={VITE_APP_URL}>
-                <img src={logo} className={styles.logoImgage} alt="logo" />
+                <img src={logo} className={styles.logoImage} alt="logo" />
                 <span className={styles.logoText}>
                     Sanders <span>Gutiérrez</span>
                 </span>
