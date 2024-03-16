@@ -5,12 +5,12 @@
     "type": "module",
     "author": "Sanders Gutiérrez <ing.sanders@gmail.com> (https://untalsanders.github.io)",
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "format": "prettier --write .",
-        "format:check": "prettier --check ."
+        "dev": "vite",
+        "build": "vite build",
+        "prview": "vite preview --port 8080",
+        "lint": "eslint --ext js,jsx --report-unsed-disable-directives --max-warning 0",
+        "format": "prettier . --write",
+        "format:check": "prettier . --check"
     },
     "dependencies": {
         "@mdx-js/loader": "3.0.0",
@@ -30,6 +30,7 @@
         "styled-components": "5.3.9"
     },
     "devDependencies": {
+        "@rollup/plugin-alias": "5.1.0",
         "@vitejs/plugin-react-swc": "3.6.0",
         "babel-plugin-styled-components": "2.1.1",
         "eslint": "8.57.0",
