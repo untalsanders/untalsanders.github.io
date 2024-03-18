@@ -11,12 +11,13 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     box-sizing: inherit;
     font-size: 100%;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -24,12 +25,23 @@ body {
     margin: 0;
     min-height: 100vh;
     max-width: 100vw;
+    min-width: 20rem;
 }
 
 a {
     font-weight: 500;
     color: #d4d6f5;
     text-decoration: inherit;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+li {
+    list-style-type: none;
 }
 
 #root {
@@ -39,7 +51,7 @@ a {
 }
 
 .container {
-    max-width: clamp(80vw, 80vw, 95vw);
+    max-width: clamp(calc(20rem - 2.5rem), 80vw, 95vw);
     margin-left: auto;
     margin-right: auto;
 }
