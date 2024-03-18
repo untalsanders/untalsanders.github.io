@@ -1,6 +1,5 @@
 'use strict'
 
-import logo from '@assets/logo-circle.svg'
 import styles from '@styles/Logo.module.css'
 import { Link } from 'react-router-dom'
 import LogoCircleSVG from './LogoCircleSVG'

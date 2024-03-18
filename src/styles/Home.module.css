@@ -16,7 +16,6 @@
 
 .Hero__Content__Left {
     img {
-        /* width: clamp(26.25rem, 100%, 31.25rem); */
         --b: .3125rem; /* border thickness */
         --c: #0000 25%,#f9af16 0; /* define the color here */
         padding: 1rem;
@@ -28,6 +27,10 @@
         background-size: 50px 50px; /* adjust border length here */
         background-repeat: no-repeat;
         transition: .6s;
+
+        &:hover {
+            background-size: 51% 51%;
+        }
     }
 }
 

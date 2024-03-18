@@ -4,25 +4,16 @@
     gap: 0.8rem;
 }
 
-.logoImgage {
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.logoImgage:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
 .logoText {
     font-size: 1.5rem;
     font-weight: 900;
 
     &:hover {
-        color: #00d7ff;
+        color: #fffc;
     }
 
     > span {
-        color: rgb(255, 128, 0);
+        color: #ff8000;
     }
 
     @media screen and (max-width: 23.4375rem) {
