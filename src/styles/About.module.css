@@ -1,6 +1,3 @@
-.About {
-}
-
 .About__Primary {
     padding: 4rem 0;
 
@@ -36,6 +33,16 @@
         span {
             font-weight: 700;
         }
+    }
+}
+
+.About__Primary_blockOne_Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+
+    a {
+        width: min(100%, 12.5rem);
     }
 }
 

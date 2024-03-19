@@ -8,14 +8,19 @@ export const AboutPage = () => (
             <div className="container">
                 <div className={styles.About__Primary_subContainer}>
                     <section className={styles.About__Primary_blockOne}>
-                        <span> NICE TO MEET YOU!</span>
+                        <span>- NICE TO MEET YOU!</span>
                         <div>
                             <h2>Sanders Gutiérrez</h2>
                             <span>Developer and Software Engineer</span>
                         </div>
-                        <a className="link-button" href="#">
-                            Got a project?
-                        </a>
+                        <div className={styles.About__Primary_blockOne_Buttons}>
+                            <a className="link-button" href="#">
+                                Got a project?
+                            </a>
+                            <a className="link-button link-button-inverse" href="#">
+                                Download CV
+                            </a>
+                        </div>
                     </section>
                     <section className={styles.About__Primary_blockTwo}>
                         <p>

@@ -67,6 +67,7 @@ p {
 .link-button {
     background-color: #1e1e1e;
     border-radius: 0.25rem;
+    border: 1px solid #141414dd;
     color: #fff;
     font-weight: normal;
     text-align: center;
@@ -75,7 +76,16 @@ p {
 
     &:hover {
         background-color: transparent;
-        border: 1px solid #141414dd;
         color: #141414dd;
+    }
+}
+
+.link-button-inverse {
+    background-color: transparent;
+    color: #1e1e1e;
+
+    &:hover {
+        background-color: #1e1e1e;
+        color: white;
     }
 }
