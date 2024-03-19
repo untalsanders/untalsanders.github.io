@@ -1,9 +1,9 @@
 .About {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 .About__Primary {
+    padding: 4rem 0;
+
     > :first-child {
         display: flex;
         flex-direction: column;
@@ -119,5 +119,53 @@
 
     div:nth-child(3) {
         background-color: rgb(227, 249, 224);
+    }
+}
+
+
+.About__Experience {
+    background-color: rgb(243, 249, 255);
+    padding: 4rem 0;
+
+    > :first-child {
+
+        > h3 {
+            font-size: clamp(1.5rem, 2rem, 8vw);
+            font-weight: 900;
+            padding: 1rem 0;
+        }
+    }
+}
+
+.About__Experience_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+    > article {
+        border-radius: .25rem;
+        background-color: #fff;
+        padding: 2rem;
+        flex-grow: 1;
+        width: min(25rem, 100%);
+
+        span:nth-child(1) {
+            font-weight: 700;
+            color: #f9af16;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        span:nth-child(3) {
+            font-weight: 700;
+        }
+
+        p {
+            color: #141414aa;
+            margin-top: 1.5rem;
+        }
     }
 }
