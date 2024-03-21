@@ -1,7 +1,6 @@
 'use strict'
 
-import { AboutPage, BlogPage, ContactPage, ErrorPage, ServicesPage } from '@/pages'
-import { HomePage } from '@pages'
+import { HomePage, AboutPage, BlogPage, ContactPage, ErrorPage, PortfolioPage } from '@pages'
 import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
 
@@ -22,8 +21,8 @@ export const router = createBrowserRouter([
                 element: <AboutPage />
             },
             {
-                path: 'services',
-                element: <ServicesPage />
+                path: 'portfolio',
+                element: <PortfolioPage />
             },
             {
                 path: 'blog',
