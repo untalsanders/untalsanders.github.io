@@ -1,6 +1,9 @@
 'use strict'
 
 import styles from '@styles/Home.module.css'
+import { Link } from 'react-router-dom'
+
+const { VITE_APP_URL } = import.meta.env
 
 export const HomePage = () => (
     <div className={styles.Hero}>
@@ -25,8 +28,8 @@ export const HomePage = () => (
                             version="1"
                             viewBox="0 0 48 48"
                             enable-background="new 0 0 48 48"
-                            height="1em"
-                            width="1em"
+                            height={30}
+                            width={30}
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill="#5C6BC0" d="M40,40c-6.9,0-16,4-16,4V22c0,0,9-4,18-4L40,40z"></path>
                             <path fill="#7986CB" d="M8,40c6.9,0,16,4,16,4V22c0,0-9-4-18-4L8,40z"></path>
@@ -46,8 +49,8 @@ export const HomePage = () => (
                     </p>
                 </section>
                 <section className={styles.Hero__Content__Right_buttons}>
-                    <a href="#">Got a projects?</a>
-                    <a href="#">Let's talk</a>
+                    <Link to={`${VITE_APP_URL}/portfolio`}>Got a projects?</Link>
+                    <Link to={`${VITE_APP_URL}/contact`}>Let's talk</Link>
                 </section>
                 <section className={styles.Hero__Content__Right_info}>
                     <ul>
