@@ -2,7 +2,7 @@
 
 export default function LogoSquareSVG(props) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width={40} height={40} viewBox="0 0 100 100" {...props}>
+        <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} viewBox="0 0 100 100" {...props}>
             <path
                 d="m 99.999989,25 v 25 h -5 c 0.0124,-17.19629 -0.10578,-30.3171 0,-45 -16.80958,0.0511 -29.85417,0.0374 -44.99999,0 V 0 h 25 24.99999 z"
                 id="c1"

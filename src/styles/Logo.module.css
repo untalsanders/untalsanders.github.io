@@ -1,3 +1,7 @@
+.Logo {
+    user-select: none;
+}
+
 .Logo a {
     display: flex;
     align-items: center;
@@ -5,7 +9,7 @@
 }
 
 .logoText {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5rem, 5vw);
     font-weight: 900;
 
     &:hover {
@@ -16,7 +20,7 @@
         color: #ff8000;
     }
 
-    @media screen and (max-width: 23.4375rem) {
+    @media screen and (max-width: 17.5rem) {
         display: none;
         transition: display 150ms ease-out;
     }
