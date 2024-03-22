@@ -1,3 +1,68 @@
 .ContactPage {
     padding: 4rem 0;
 }
+
+.ContactPage__Content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
+    gap: 2rem;
+}
+
+.ContactPage__Header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    span {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #141414aa;
+    }
+
+    h3 {
+        font-size: clamp(1.5rem, 2rem, 8vw);
+        font-weight: 900;
+    }
+
+    p {
+        color: #141414aa;
+    }
+}
+
+.ContactPage__Info {
+    border-left: 4px solid #f9af16;
+    padding: 1rem;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        li a {
+            color: #1e1e1e;
+        }
+    }
+}
+
+.ContactPage__Form {
+    background-color: floralwhite;
+    padding: 2rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        input,
+        textarea {
+            border: 1px solid #ccc6;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            flex-grow: 1;
+        }
+
+        textarea {
+            min-height: 9.375rem;
+        }
+    }
+}
