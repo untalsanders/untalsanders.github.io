@@ -24,10 +24,10 @@ export const HomePage = () => (
                         <svg
                             stroke="currentColor"
                             fill="currentColor"
-                            stroke-width="0"
+                            strokeWidth="0"
                             version="1"
                             viewBox="0 0 48 48"
-                            enable-background="new 0 0 48 48"
+                            enableBackground="new 0 0 48 48"
                             height={30}
                             width={30}
                             xmlns="http://www.w3.org/2000/svg">
