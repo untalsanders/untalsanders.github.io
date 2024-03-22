@@ -21,7 +21,7 @@ export const PortfolioPage = () => (
                         <span>
                             <a href="#">Youtube</a>
                         </span>
-                        <h3 class="title">
+                        <h3>
                             <a href="#">New Technology</a>
                         </h3>
                     </div>
@@ -34,7 +34,7 @@ export const PortfolioPage = () => (
                         <span>
                             <a href="#">Vimeo</a>
                         </span>
-                        <h3 class="title">
+                        <h3>
                             <a href="#">Firogo Majestic Ltd.</a>
                         </h3>
                     </div>
@@ -47,7 +47,7 @@ export const PortfolioPage = () => (
                         <span>
                             <a href="#">Soundcloud</a>
                         </span>
-                        <h3 class="title">
+                        <h3>
                             <a href="#">Creative Building</a>
                         </h3>
                     </div>
@@ -60,7 +60,7 @@ export const PortfolioPage = () => (
                         <span>
                             <a href="#">Instagram</a>
                         </span>
-                        <h3 class="title">
+                        <h3>
                             <a href="#">Other Technology</a>
                         </h3>
                     </div>
@@ -73,7 +73,7 @@ export const PortfolioPage = () => (
                         <span>
                             <a href="#">Fiction Scienty</a>
                         </span>
-                        <h3 class="title">
+                        <h3>
                             <a href="#">Scienty</a>
                         </h3>
                     </div>
@@ -86,7 +86,7 @@ export const PortfolioPage = () => (
                         <span>
                             <a href="#">Movies</a>
                         </span>
-                        <h3 class="title">
+                        <h3>
                             <a href="#">Netflix</a>
                         </h3>
                     </div>
