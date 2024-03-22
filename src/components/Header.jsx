@@ -10,7 +10,7 @@ export function Header() {
             <div className="container">
                 <Logo />
                 <Navbar />
-                <button>
+                <button className={styles.ButtonMobile}>
                     <FaBars />
                 </button>
             </div>

@@ -12,11 +12,7 @@
     }
 }
 
-/* .Header ~ * {
-    padding-top: 80px;
-} */
-
-button {
+.ButtonMobile {
     background-color: transparent;
     border: 0;
     padding: 1.5rem 1rem;
