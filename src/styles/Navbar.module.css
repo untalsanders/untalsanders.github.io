@@ -1,5 +1,6 @@
 .Navbar {
     display: none;
+    user-select: none;
 
     @media screen and (min-width: 57.5rem) {
         display: flex;
@@ -7,7 +8,7 @@
     }
 
     > * {
-        padding: .5rem 1rem;
+        padding: 1.5rem 1rem;
         transition: color 200ms ease-in;
 
         &:hover {

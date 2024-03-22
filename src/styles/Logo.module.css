@@ -5,11 +5,11 @@
 .Logo a {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
 .logoText {
-    font-size: clamp(1rem, 1.5rem, 5vw);
+    font-size: clamp(1rem, 1.5rem, 4.5vw);
     font-weight: 900;
 
     &:hover {

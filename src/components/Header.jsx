@@ -2,6 +2,7 @@
 
 import styles from '@styles/Header.module.css'
 import { Logo, Navbar } from '@components'
+import { FaBars } from 'react-icons/fa'
 
 export function Header() {
     return (
@@ -9,6 +10,9 @@ export function Header() {
             <div className="container">
                 <Logo />
                 <Navbar />
+                <button>
+                    <FaBars />
+                </button>
             </div>
         </header>
     )

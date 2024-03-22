@@ -1,12 +1,32 @@
 .Header {
     background-color: #1e1e1e;
     color: white;
+    position: sticky;
+    top: 0;
 
     > * {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 1rem;
-        padding: 1.5rem 0;
+        gap: 1.25rem;
+    }
+}
+
+/* .Header ~ * {
+    padding-top: 80px;
+} */
+
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 1.5rem 1rem;
+
+    svg {
+        fill: #fff;
+        font-size: clamp(1rem, 1.5rem, 8vw);
+    }
+
+    @media (width >= 57.5rem) {
+        display: none;
     }
 }
