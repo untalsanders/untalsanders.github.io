@@ -3,8 +3,6 @@
 import styles from '@styles/Home.module.css'
 import { Link } from 'react-router-dom'
 
-const { VITE_APP_URL } = import.meta.env
-
 export const HomePage = () => (
     <div className={styles.Hero}>
         <div className={`${styles.Hero__Content} container`}>
@@ -49,8 +47,8 @@ export const HomePage = () => (
                     </p>
                 </section>
                 <section className={styles.Hero__Content__Right_buttons}>
-                    <Link to={`${VITE_APP_URL}/portfolio`}>Got a projects?</Link>
-                    <Link to={`${VITE_APP_URL}/contact`}>Let's talk</Link>
+                    <Link to={`portfolio`}>Got a projects?</Link>
+                    <Link to={`contact`}>Let's talk</Link>
                 </section>
                 <section className={styles.Hero__Content__Right_info}>
                     <ul>
