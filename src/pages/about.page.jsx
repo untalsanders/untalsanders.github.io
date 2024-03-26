@@ -18,8 +18,8 @@ export const AboutPage = () => (
                             <Link to="../portfolio" className="link-button" >
                                 Got a project?
                             </Link>
-                            <a href="https://untalsanders.github.io/resume" className="link-button link-button-inverse" >
-                                Download CV
+                            <a href="https://untalsanders.github.io/resume" target='_blank' className="link-button link-button-inverse" >
+                                View CV
                             </a>
                         </div>
                     </section>
