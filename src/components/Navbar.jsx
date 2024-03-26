@@ -9,10 +9,10 @@ export function Navbar() {
     return (
         <nav className={styles.Navbar}>
             <Link to={`${VITE_APP_URL}`}>Home</Link>
-            <Link to={`${VITE_APP_URL}/about`}>About</Link>
-            <Link to={`${VITE_APP_URL}/portfolio`}>Portfolio</Link>
-            <Link to={`${VITE_APP_URL}/blog`}>Blog</Link>
-            <Link to={`${VITE_APP_URL}/contact`}>Contact</Link>
+            <Link to={`about`}>About</Link>
+            <Link to={`portfolio`}>Portfolio</Link>
+            <Link to={`blog`}>Blog</Link>
+            <Link to={`contact`}>Contact</Link>
         </nav>
     )
 }
