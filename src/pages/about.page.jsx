@@ -3,8 +3,6 @@
 import styles from '@styles/About.module.css'
 import { Link } from 'react-router-dom'
 
-const { VITE_APP_URL } = import.meta.env
-
 export const AboutPage = () => (
     <div className={styles.About}>
         <div className={styles.About__Primary}>
@@ -17,12 +15,12 @@ export const AboutPage = () => (
                             <span>Developer and Software Engineer</span>
                         </div>
                         <div className={styles.About__Primary_blockOne_Buttons}>
-                            <Link to={`../portfolio`} className="link-button" >
+                            <Link to="../portfolio" className="link-button" >
                                 Got a project?
                             </Link>
-                            <Link to={`../resume`} className="link-button link-button-inverse" >
+                            <a href="https://untalsanders.github.io/resume" className="link-button link-button-inverse" >
                                 Download CV
-                            </Link>
+                            </a>
                         </div>
                     </section>
                     <section className={styles.About__Primary_blockTwo}>
