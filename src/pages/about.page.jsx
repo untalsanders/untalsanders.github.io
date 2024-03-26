@@ -17,10 +17,10 @@ export const AboutPage = () => (
                             <span>Developer and Software Engineer</span>
                         </div>
                         <div className={styles.About__Primary_blockOne_Buttons}>
-                            <Link to={`portfolio`} className="link-button" >
+                            <Link to={`../portfolio`} className="link-button" >
                                 Got a project?
                             </Link>
-                            <Link to={`resume`} className="link-button link-button-inverse" >
+                            <Link to={`../resume`} className="link-button link-button-inverse" >
                                 Download CV
                             </Link>
                         </div>
