@@ -3,7 +3,7 @@
     <h3> :zap: Personal Website :zap:️ </h3>
 </div>
 
-![Screenshot untalsanders-site](screenshot-untalsanders-site.png "screenshot-site")
+![Screenshot untalsanders-site](screenshot.png "screenshot-site")
 <br>
 
 ## :checkered_flag: How to start
@@ -32,4 +32,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## :unlock: LICENSE
 
-[MIT](LICENSE) © [Sanders Gutiérrez](https://untalsanders.github.io)
+[BSL](LICENSE) © [Sanders Gutiérrez](https://untalsanders.github.io)

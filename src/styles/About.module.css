@@ -1,0 +1,239 @@
+.About__Primary {
+    padding: 4rem 0;
+
+    > :first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+.About__Primary_subContainer {
+    display: grid;
+    gap: 2.5rem;
+
+    @media (width >= 60rem) {
+        grid-template-columns: minmax(30%, 40%) 1fr;
+    }
+}
+
+.About__Primary_blockOne {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(1rem, 1.5rem, 5vw);
+    min-width: min(17.5rem, 100%);
+
+    div {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.About__Primary_blockOne_Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+
+    a {
+        width: min(12.5rem, 100%);
+    }
+}
+
+.About__Primary_blockTwo {
+    p {
+        color: #141414aa;
+    }
+
+    p:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+}
+
+.About__Primary_blockThree {
+    grid-column: 2/3;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
+
+.About__Primary_blockFour {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        min-width: 17.5rem;
+        background-color: floralwhite;
+        flex-grow: 1;
+        padding: 1rem;
+        text-align: center;
+
+        span:nth-child(2) {
+            font-weight: 700;
+        }
+    }
+}
+
+.About__Primary_blockFive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.25rem;
+
+    div {
+        width: min(17.5rem, 100%);
+        height: min(12.5rem, 15.625rem);
+        border-radius: 0.25rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+
+        span:first-child {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        span:nth-child(2) {
+            color: #141414aa;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    div:nth-child(1) {
+        background-color: rgb(211, 244, 236);
+    }
+
+    div:nth-child(2) {
+        background-color: rgb(252, 232, 212);
+    }
+
+    div:nth-child(3) {
+        background-color: rgb(227, 249, 224);
+    }
+}
+
+
+.About__Experience {
+    padding: 4rem 0;
+
+    > :first-child {
+
+        > h3 {
+            font-size: clamp(1.5rem, 2rem, 8vw);
+            font-weight: 900;
+            padding: 1rem 0;
+        }
+    }
+}
+
+.About__Experience_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+    > article {
+        border-radius: .25rem;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 2rem;
+        flex-grow: 1;
+        width: min(25rem, 100%);
+
+        span:nth-child(1) {
+            font-weight: 700;
+            color: #f9af16;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        span:nth-child(3) {
+            font-weight: 700;
+        }
+
+        p {
+            color: #141414aa;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.ServicePage {
+    background-color: rgb(243, 249, 255);
+    padding: 6rem 0;
+}
+
+.ServicePage__Header {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        h3 {
+            font-size: clamp(1.5rem, 2rem, 8vw);
+            font-weight: 900;
+            padding: 1rem 0;
+        }
+
+        a {
+            font-weight: 700;
+        }
+    }
+}
+
+.ServicePage__Service_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+    > article {
+        border-radius: .25rem;
+        background-color: #fff;
+        padding: 2rem;
+        flex-grow: 1;
+        width: min(25rem, 100%);
+        text-align: center;
+
+        span:nth-child(1) {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #f9af16;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        span:nth-child(3) {
+            font-weight: 700;
+        }
+
+        p {
+            color: #141414aa;
+            margin-top: 1.5rem;
+        }
+    }
+}
