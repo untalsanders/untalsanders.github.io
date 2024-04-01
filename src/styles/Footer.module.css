@@ -3,3 +3,20 @@
     color: white;
     padding: 1rem;
 }
+
+.Footer__Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Footer__Content_MadeIn {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    img {
+        width: 20;
+        height: 15;
+    }
+}
