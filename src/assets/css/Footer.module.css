@@ -25,7 +25,7 @@
     align-items: center;
     gap: 0.75rem;
 
-    img {
+    & img {
         width: 20;
         height: 15;
     }

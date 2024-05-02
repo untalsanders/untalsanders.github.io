@@ -1,6 +1,6 @@
 'use strict'
 
-import styles from '@styles/Error.module.css'
+import styles from '@/assets/css/Error.module.css'
 
 export const ErrorPage = () => (
     <div className={styles.ErrorPage}>

@@ -1,6 +1,6 @@
 'use strict'
 
-import styles from '@styles/Contact.module.css'
+import styles from '@assets/css/Contact.module.css'
 
 export const ContactPage = () => (
     <div className={styles.ContactPage}>

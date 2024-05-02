@@ -1,15 +1,15 @@
 'use strict'
 
-import styles from '@styles/Logo.module.css'
-import { Link } from 'react-router-dom'
+import styles from '@/assets/css/Logo.module.css'
+import Link from 'next/link'
 import LogoCircleSVG from './LogoCircleSVG'
 
-const { VITE_APP_URL } = import.meta.env
+const VITE_APP_URL = '/'
 
 export function Logo() {
     return (
         <div className={styles.Logo}>
-            <Link to={VITE_APP_URL}>
+            <Link href={VITE_APP_URL}>
                 <LogoCircleSVG />
                 <span className={styles.logoText}>
                     Sanders <span>Gutiérrez</span>

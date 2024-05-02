@@ -1,6 +1,6 @@
 'use strict'
 
-import styles from '@styles/Footer.module.css'
+import styles from '@/assets/css/Footer.module.css'
 
 const Copyright = () => <div>Copyright &copy; 2024 Sanders Gutiérrez. All rights reserved.</div>
 

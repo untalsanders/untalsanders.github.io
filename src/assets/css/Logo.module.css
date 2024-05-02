@@ -16,7 +16,7 @@
         color: #fffc;
     }
 
-    > span {
+    & > span {
         color: #ff8000;
     }
 

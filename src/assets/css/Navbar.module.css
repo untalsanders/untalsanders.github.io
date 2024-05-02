@@ -7,7 +7,7 @@
         align-items: center;
     }
 
-    > * {
+    & > * {
         padding: 1.5rem 1rem;
         transition: color 200ms ease-in;
 

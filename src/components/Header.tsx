@@ -1,7 +1,7 @@
 'use strict'
 
-import styles from '@styles/Header.module.css'
-import { Logo, Navbar } from '@components'
+import styles from '@/assets/css/Header.module.css'
+import { Logo, Navbar } from '@/components'
 import { FaBars } from 'react-icons/fa'
 
 export function Header() {

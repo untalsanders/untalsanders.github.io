@@ -1,6 +1,6 @@
 'use strict'
 
-import styles from '@styles/Portfolio.module.css'
+import styles from '@/assets/css/Portfolio.module.css'
 
 export const PortfolioPage = () => (
     <div className={styles.PortfolioPage}>
