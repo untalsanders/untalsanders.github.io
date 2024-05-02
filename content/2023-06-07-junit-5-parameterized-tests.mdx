@@ -4,7 +4,7 @@ date: '2023-06-07'
 author: 'Sanders Gutiérrez'
 cover: '/images/cover-junit-5-parameterized-tests.webp'
 tags:
-    - 'Java'
+  - 'Java'
 ---
 
 ![JUnit 5 Parameterized Tests](/images/cover-junit-5-parameterized-tests.webp)
@@ -17,9 +17,9 @@ Let me give you a summary of JUnit - In software development, we developers writ
 
 Now that we know about JUnit. Let’s now focus on the topic of parameterized tests in JUnit 5. The parameterized tests solve the most common problems while developing a test framework for any old/new functionalities.
 
--   Writing a test case for every possible input becomes easy.
--   A single test case can accept multiple inputs to test the source code, helping to reduce code duplication.
--   By running a single test case with multiple inputs, we can be confident that all possible scenarios have been covered and maintain better code coverage.
+- Writing a test case for every possible input becomes easy.
+- A single test case can accept multiple inputs to test the source code, helping to reduce code duplication.
+- By running a single test case with multiple inputs, we can be confident that all possible scenarios have been covered and maintain better code coverage.
 
 Development teams aim to create source code that is both reusable and loosely coupled by utilizing methods and classes. The way the code functions is affected by the parameters passed to it. For example, the `sum` method in a Calculator class is able to process both integer and float values. `JUnit 5` has introduced the ability to perform parameterized tests, which enables testing the source code using a single test case that can accept different inputs. This allows for more efficient testing, as previously in older versions of JUnit, separate test cases had to be created for each input type, leading to a lot of code repetition.
 
@@ -109,7 +109,7 @@ void checkEmpty(String value) {
 }
 ```
 
--   We can also combine the passing of null and empty inputs using @NullAndEmptySource.
+- We can also combine the passing of null and empty inputs using @NullAndEmptySource.
 
 ```java
 @ParameterizedTest
@@ -119,7 +119,7 @@ void checkNullAndEmpty(String value) {
 }
 ```
 
--   Another trick to pass null, empty and blank input values is to combine the @NullAndEmptySource and @ValueSource(strings = { " ", " " }) to cover all possible negative scenarios.
+- Another trick to pass null, empty and blank input values is to combine the @NullAndEmptySource and @ValueSource(strings = { " ", " " }) to cover all possible negative scenarios.
 
 ```java
 @ParameterizedTest
@@ -134,7 +134,7 @@ void checkNullEmptyAndBlank(String value) {
 
 This annotation allows us to load the inputs from one or more factory methods of the test class or external classes. Each factory method must generate a stream of arguments.
 
--   Explicit method source - The test will try to load the supplied method.
+- Explicit method source - The test will try to load the supplied method.
 
 ```java
 // Note: The test will try to load the supplied method
@@ -149,7 +149,7 @@ static Stream<String> checkExplicitMethodSourceArgs() {
 }
 ```
 
--   Implicit method source - The test will search for the source method that matches the test-case method name..
+- Implicit method source - The test will search for the source method that matches the test-case method name..
 
 ```java
 // Note: The test will search for the source method
@@ -165,7 +165,7 @@ static Stream<String> checkImplicitMethodSource() {
 }
 ```
 
--   Multi-argument method source - We must pass the inputs as a Stream of Arguments. The test will automatically map arguments based on the index.
+- Multi-argument method source - We must pass the inputs as a Stream of Arguments. The test will automatically map arguments based on the index.
 
 ```java
 // Note: The test will automatically map arguments based on the index
@@ -180,7 +180,7 @@ static Stream<Arguments> checkMultiArgumentsMethodSource() {
 }
 ```
 
--   External method source - The test will try to load the external method.
+- External method source - The test will try to load the external method.
 
 ```java
 // Note: The test will try to load the external method
@@ -260,8 +260,8 @@ void checkCsvFileSourceAttributes(int number, String expected) {
 **src/test/resources/csv-file-source_attributes.csv**
 
 || NUMBER | ODD_EVEN ||
-|| 2 	  | even     ||
-|| 3 	  | odd	     ||
+|| 2 | even ||
+|| 3 | odd ||
 
 ## @EnumSource
 
@@ -293,7 +293,7 @@ void checkEnumSourceValue(ChronoUnit unit) {
 
 `@EnumSource` will pass all 16 ChronoUnit enums as an argument in this example.
 
-- names - The names of enum constants to provide, or regular expression to select the names, example - DAYS or ^.*DAYS$
+- names - The names of enum constants to provide, or regular expression to select the names, example - DAYS or ^.\*DAYS$
 
 ```java
 @ParameterizedTest

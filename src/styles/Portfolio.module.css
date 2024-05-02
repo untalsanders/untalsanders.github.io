@@ -71,7 +71,7 @@
             img {
                 width: 100%;
                 max-height: 18.75rem;
-                border-radius: .25rem;
+                border-radius: 0.25rem;
                 border: 1px solid #ccc;
             }
         }
@@ -93,7 +93,6 @@
     padding: 5rem 0;
     text-align: center;
 
-
     section {
         display: flex;
         flex-direction: column;
@@ -114,7 +113,7 @@
 
         article {
             background-color: #fff;
-            border-radius: .25rem;
+            border-radius: 0.25rem;
             padding: 2rem;
 
             p {
@@ -135,8 +134,8 @@
         footer {
             span {
                 background-color: #000;
-                width: .625rem;
-                height: .625rem;
+                width: 0.625rem;
+                height: 0.625rem;
             }
         }
     }

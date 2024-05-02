@@ -130,12 +130,10 @@
     }
 }
 
-
 .About__Experience {
     padding: 4rem 0;
 
     > :first-child {
-
         > h3 {
             font-size: clamp(1.5rem, 2rem, 8vw);
             font-weight: 900;
@@ -151,7 +149,7 @@
     gap: 2rem;
 
     > article {
-        border-radius: .25rem;
+        border-radius: 0.25rem;
         border: 1px solid #ccc;
         background-color: #fff;
         padding: 2rem;
@@ -210,7 +208,7 @@
     gap: 2rem;
 
     > article {
-        border-radius: .25rem;
+        border-radius: 0.25rem;
         background-color: #fff;
         padding: 2rem;
         flex-grow: 1;
