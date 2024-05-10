@@ -1,12 +1,12 @@
 .BlogPage {
     padding: 4rem 0;
 
-    > :first-child {
+    & > :first-child {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
 
-        > * ~ * {
+        & > * ~ * {
             border-left: 1px solid #ccc;
             padding-left: 2rem;
         }
@@ -19,12 +19,12 @@
     gap: 1rem;
     min-width: min(30%, 100%);
 
-    span {
+    & span {
         color: #141414aa;
         font-weight: 700;
     }
 
-    h3 {
+    & h3 {
         font-size: clamp(1.5rem, 2rem, 8vw);
         font-weight: 900;
     }
@@ -36,34 +36,34 @@
     flex-wrap: wrap;
     gap: 2rem;
 
-    article {
+    & article {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
 
-        header {
+        & header {
             display: flex;
             align-items: center;
             gap: 0.5rem;
 
-            svg {
+            & svg {
                 fill: #141414aa;
             }
 
-            span {
+            & span {
                 color: #141414aa;
                 font-weight: 400;
                 font-size: 0.875rem;
             }
         }
 
-        footer {
-            a {
+        & footer {
+            & a {
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
 
-                svg {
+                & svg {
                     fill: #141414aa;
                 }
             }
