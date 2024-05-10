@@ -1,7 +1,7 @@
 .About__Primary {
     padding: 4rem 0;
 
-    > :first-child {
+    & > :first-child {
         display: flex;
         flex-direction: column;
         gap: 4rem;
@@ -23,14 +23,14 @@
     row-gap: clamp(1rem, 1.5rem, 5vw);
     min-width: min(17.5rem, 100%);
 
-    div {
-        h2 {
+    & div {
+        & h2 {
             font-size: 2.5rem;
             font-weight: 900;
             line-height: 1.2;
         }
 
-        span {
+        & span {
             font-weight: 700;
         }
     }
@@ -41,17 +41,17 @@
     flex-wrap: wrap;
     gap: 1.25rem;
 
-    a {
+    & a {
         width: min(12.5rem, 100%);
     }
 }
 
 .About__Primary_blockTwo {
-    p {
+    & p {
         color: #141414aa;
     }
 
-    p:nth-child(2) {
+    & p:nth-child(2) {
         margin-bottom: 2rem;
     }
 }
@@ -59,7 +59,7 @@
 .About__Primary_blockThree {
     grid-column: 2/3;
 
-    ul {
+    & ul {
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
@@ -67,13 +67,13 @@
 }
 
 .About__Primary_blockFour {
-    ul {
+    & ul {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
     }
 
-    li {
+    & li {
         display: flex;
         flex-direction: column;
         min-width: 17.5rem;
@@ -82,7 +82,7 @@
         padding: 1rem;
         text-align: center;
 
-        span:nth-child(2) {
+        & span:nth-child(2) {
             font-weight: 700;
         }
     }
@@ -94,7 +94,7 @@
     justify-content: space-between;
     gap: 1.25rem;
 
-    div {
+    & div {
         width: min(17.5rem, 100%);
         height: min(12.5rem, 15.625rem);
         border-radius: 0.25rem;
@@ -105,27 +105,27 @@
         justify-content: center;
         flex-grow: 1;
 
-        span:first-child {
+        & span:first-child {
             font-size: 2rem;
             font-weight: 700;
         }
 
-        span:nth-child(2) {
+        & span:nth-child(2) {
             color: #141414aa;
             font-weight: 600;
             text-transform: uppercase;
         }
     }
 
-    div:nth-child(1) {
+    & div:nth-child(1) {
         background-color: rgb(211, 244, 236);
     }
 
-    div:nth-child(2) {
+    & div:nth-child(2) {
         background-color: rgb(252, 232, 212);
     }
 
-    div:nth-child(3) {
+    & div:nth-child(3) {
         background-color: rgb(227, 249, 224);
     }
 }
@@ -133,8 +133,8 @@
 .About__Experience {
     padding: 4rem 0;
 
-    > :first-child {
-        > h3 {
+    & > :first-child {
+        & > h3 {
             font-size: clamp(1.5rem, 2rem, 8vw);
             font-weight: 900;
             padding: 1rem 0;
@@ -148,7 +148,7 @@
     justify-content: space-between;
     gap: 2rem;
 
-    > article {
+    & > article {
         border-radius: 0.25rem;
         border: 1px solid #ccc;
         background-color: #fff;
@@ -156,20 +156,20 @@
         flex-grow: 1;
         width: min(25rem, 100%);
 
-        span:nth-child(1) {
+        & span:nth-child(1) {
             font-weight: 700;
             color: #f9af16;
         }
 
-        h3 {
+        & h3 {
             font-size: 1.5rem;
         }
 
-        span:nth-child(3) {
+        & span:nth-child(3) {
             font-weight: 700;
         }
 
-        p {
+        & p {
             color: #141414aa;
             margin-top: 1.5rem;
         }
@@ -182,20 +182,20 @@
 }
 
 .ServicePage__Header {
-    header {
+    & header {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2rem;
 
-        h3 {
+        & h3 {
             font-size: clamp(1.5rem, 2rem, 8vw);
             font-weight: 900;
             padding: 1rem 0;
         }
 
-        a {
+        & a {
             font-weight: 700;
         }
     }
@@ -207,7 +207,7 @@
     justify-content: space-between;
     gap: 2rem;
 
-    > article {
+    & > article {
         border-radius: 0.25rem;
         background-color: #fff;
         padding: 2rem;
@@ -215,21 +215,21 @@
         width: min(25rem, 100%);
         text-align: center;
 
-        span:nth-child(1) {
+        & span:nth-child(1) {
             font-size: 3rem;
             font-weight: 700;
             color: #f9af16;
         }
 
-        h3 {
+        & h3 {
             font-size: 1.5rem;
         }
 
-        span:nth-child(3) {
+        & span:nth-child(3) {
             font-weight: 700;
         }
 
-        p {
+        & p {
             color: #141414aa;
             margin-top: 1.5rem;
         }
