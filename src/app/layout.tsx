@@ -1,8 +1,15 @@
 import styles from '@/assets/css/Layout.module.css'
 import '@/assets/css/globals.css'
 import { Footer, Header } from '@/components'
+import { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import Head from 'next/head'
+
+export const metadata: Metadata = {
+    title: 'Sanders Gutiérrez',
+    icons: {
+        icon: '/favicon.svg',
+    }
+}
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -18,12 +25,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={poppins.className}>
-            <Head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-                <title>Sanders Gutiérrez</title>
-            </Head>
             <body className={styles.Layout}>
                 <Header />
                 <main>{children}</main>
