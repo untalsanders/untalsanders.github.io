@@ -13,18 +13,18 @@
     flex-direction: column;
     gap: 1rem;
 
-    span {
+    & span {
         text-transform: uppercase;
         font-weight: 600;
         color: #141414aa;
     }
 
-    h3 {
+    & h3 {
         font-size: clamp(1.5rem, 2rem, 8vw);
         font-weight: 900;
     }
 
-    p {
+    & p {
         color: #141414aa;
     }
 }
@@ -33,12 +33,12 @@
     border-left: 0.25rem solid #f9af16;
     padding: 1rem;
 
-    ul {
+    & ul {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
 
-        li a {
+        & li a {
             color: #1e1e1e;
         }
     }
@@ -48,25 +48,25 @@
     background-color: floralwhite;
     padding: 1.5rem;
 
-    form {
+    & form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         width: 100%;
 
-        input,
-        textarea {
+        & input,
+        & textarea {
             border: 1px solid #ccc6;
             border-radius: 0.5rem;
             padding: 1rem;
             width: 100%;
         }
 
-        textarea {
+        & textarea {
             min-height: 9.375rem;
         }
 
-        button {
+        & button {
             font-weight: 700;
 
             &:hover {
