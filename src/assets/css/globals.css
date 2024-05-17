@@ -53,6 +53,10 @@ li {
     margin-right: auto;
 }
 
+.active {
+    color: #f9af16;
+}
+
 .link-button {
     background-color: #1e1e1e;
     border-radius: 0.25rem;
