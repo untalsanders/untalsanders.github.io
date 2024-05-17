@@ -42,7 +42,7 @@ export default function HomePage() {
                     <section className={styles.Hero__Content__Right_subtitle}>
                         <p>
                             I'm a Buenos Aires, Argentina based Developer and Software Engineer with{' '}
-                            <span>8+ years</span> of experience, and I want to work together and build something unique.
+                            <span>6+ years</span> of experience, and I want to work together and build something unique.
                         </p>
                     </section>
                     <section className={styles.Hero__Content__Right_buttons}>
