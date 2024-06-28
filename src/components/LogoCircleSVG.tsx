@@ -1,6 +1,6 @@
-'use strict'
+import { JSX, SVGProps } from "react"
 
-export default function LogoCircleSVG(props) {
+export default function LogoCircleSVG(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={35} height={35} viewBox="0 0 100 100" {...props}>
             <path
