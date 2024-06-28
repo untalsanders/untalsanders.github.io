@@ -11,7 +11,7 @@ export default function HomePage() {
                 <div className={styles.Hero__Content__Right}>
                     <section className={styles.Hero__Content__Right_title}>
                         <h3>
-                            Hi, I'm <span>Sanders!</span>
+                            Hi, I&apos;m <span>Sanders!</span>
                         </h3>
                         <h3>
                             <span>SOFTWARE</span>
@@ -41,13 +41,13 @@ export default function HomePage() {
                     </section>
                     <section className={styles.Hero__Content__Right_subtitle}>
                         <p>
-                            I'm a Buenos Aires, Argentina based Developer and Software Engineer with{' '}
+                            I&apos;m a Buenos Aires, Argentina based Developer and Software Engineer with{' '}
                             <span>6+ years</span> of experience, and I want to work together and build something unique.
                         </p>
                     </section>
                     <section className={styles.Hero__Content__Right_buttons}>
                         <Link href={`portfolio`}>Got a projects?</Link>
-                        <Link href={`contact`}>Let's talk</Link>
+                        <Link href={`contact`}>Let&apos;s talk</Link>
                     </section>
                     <section className={styles.Hero__Content__Right_info}>
                         <ul>

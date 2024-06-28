@@ -8,7 +8,7 @@ export default function ContactPage() {
                     <span>- Contact</span>
                     <h3>Get in touch</h3>
                     <p>
-                        I'm currently avaliable to take on new projects, so feel free to send me a message about
+                        I&apos;m currently available to take on new projects, so feel free to send me a message about
                         anything that you want to run past me. You can contact anytime at 24/7.
                     </p>
                     <section className={styles.ContactPage__Info}>

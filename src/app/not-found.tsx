@@ -7,7 +7,7 @@ export default function NotFound() {
         <section className={`${styles.NotFound}`}>
             <span>404</span>
             <p>
-                <span>This page doesn't exist</span>
+                <span>This page doesn&apos;t exist</span>
                 <span>Please check the URL in the address bar and try again.</span>
             </p>
         </section>

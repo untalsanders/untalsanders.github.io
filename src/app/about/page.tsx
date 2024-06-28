@@ -27,12 +27,12 @@ export default function about() {
                         </section>
                         <section className={styles.About__Primary_blockTwo}>
                             <p>
-                                My name is Sanders and I'm a professional with a strong career in Software Engineering
+                                My name is Sanders and I&apos;m a professional with a strong career in Software Engineering
                                 and a growing interest in Artificial Intelligence and Machine Learning, with a passion
                                 for Physics and Mathematics.
                             </p>
                             <p>
-                                I have more than 5 years of experience in software development with Java and Nodejs. I
+                                I have more than 5 years of experience in software development with Java and Node.js. I
                                 have creativity to solve problems and adapt to different environments and cultures.
                                 Ability to work in a team and manage interpersonal relationships.
                             </p>

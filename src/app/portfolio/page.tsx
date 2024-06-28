@@ -97,7 +97,7 @@ export default function PortfolioPage() {
                 <section className="container">
                     <header>
                         <span>- Testimonial</span>
-                        <h3>What client's say?</h3>
+                        <h3>What client&apos;s say?</h3>
                     </header>
                     <article>
                         <p>
