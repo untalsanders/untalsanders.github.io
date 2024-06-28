@@ -2,36 +2,32 @@
     "name": "untalsanders-site",
     "private": true,
     "version": "1.0.0",
-    "type": "module",
     "author": "Sanders Gutiérrez <ing.sanders@gmail.com> (https://untalsanders.github.io)",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "prview": "vite preview --port 8080",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
         "deploy": "gh-pages -d dist",
         "predeploy": "npm run build",
-        "lint": "eslint --ext js,jsx --report-unsed-disable-directives --max-warning 0",
+        "lint": "next lint",
         "format": "prettier . --write",
         "format:check": "prettier . --check"
     },
     "dependencies": {
+        "next": "14.2.3",
         "normalize.css": "8.0.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-icons": "4.8.0",
-        "react-router-dom": "6.22.3"
+        "react-icons": "4.8.0"
     },
     "devDependencies": {
-        "@rollup/plugin-alias": "5.1.0",
-        "@vitejs/plugin-react-swc": "3.6.0",
+        "@types/node": "20.12.7",
+        "@types/react": "18.3.1",
         "eslint": "8.57.0",
+        "eslint-config-next": "14.2.3",
         "eslint-config-prettier": "8.8.0",
-        "eslint-plugin-react": "7.34.0",
-        "eslint-plugin-react-hooks": "4.6.0",
-        "eslint-plugin-react-refresh": "0.4.6",
         "gh-pages": "6.1.1",
-        "prettier": "2.8.8",
-        "vite": "5.2.8"
+        "prettier": "2.8.8"
     },
     "license": "BSL-1.0",
     "engines": {

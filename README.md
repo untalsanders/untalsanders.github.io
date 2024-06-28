@@ -3,22 +3,25 @@
     <h3> :zap: Personal Website :zap:️ </h3>
 </div>
 
-![Screenshot untalsanders-site](screenshot.png "screenshot-site")
+![Screenshot untalsanders-site](screenshot.png 'screenshot-site')
 <br>
 
 ## :checkered_flag: How to start
 
 1. Install Node.js 20, go to [NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) for install NVM
+
    ```shell
    nvm install 20 --lts
    ```
 
 2. Set up as your default Node.js
+
    ```shell
    nvm alias default 20
    ```
 
 3. Clone this repository:
+
    ```shell
    git clone https://github.com/untalsanders/untalsanders.github.io.git
    ```

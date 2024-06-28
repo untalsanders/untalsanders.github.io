@@ -1,0 +1,27 @@
+.Logo {
+    user-select: none;
+}
+
+.Logo a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoText {
+    font-size: clamp(1rem, 1.5rem, 4.5vw);
+    font-weight: 900;
+
+    &:hover {
+        color: #fffc;
+    }
+
+    & > span {
+        color: #ff8000;
+    }
+
+    @media screen and (max-width: 17.5rem) {
+        display: none;
+        transition: display 150ms ease-out;
+    }
+}
