@@ -1,19 +1,20 @@
 'use client'
 
 import styles from '@/styles/Blog.module.css'
-import PostList from '@/features/blog/presentation/post-list/post-list'
 import { useEffect, useState } from 'react'
 import { PostsService } from '@/features/blog/application/services/PostsService'
+import PostItem from '@/features/blog/presentation/post-item/post-item'
 import { Post } from '@/features/blog/domain/models/Post'
 
-export default function BlogPage() {
-    const [posts, setPosts] = useState<Post[]>([])
+const PostItemPage = ({ params }: { params: Promise<{id: number}>}) => {
+    const [post, setPost] = useState<Post | null>(null)
 
     useEffect(() => {
         (async () => {
+            const { id } = (await params)
             const postsService = new PostsService()
-            const postList = await postsService.getPosts()
-            setPosts(postList)
+            const data = await postsService.getPostById(id)
+            setPost(data)
         })()
     }, [])
 
@@ -24,8 +25,10 @@ export default function BlogPage() {
                     <span>- BLOG</span>
                     <h3>My Blog and News</h3>
                 </div>
-                <PostList posts={posts}/>
+                <PostItem id={post?.id ?? 0} title={post?.title ?? ""} content={post?.content ?? ""} />
             </div>
         </div>
     )
 }
+
+export default PostItemPage

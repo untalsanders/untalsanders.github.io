@@ -1,11 +1,12 @@
-import styles from '@/assets/css/Home.module.css'
+import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 
-export default function HomePage() {
+
+const HomePage = () => {
     return (
         <div className={styles.Hero}>
             <div className={`${styles.Hero__Content} container`}>
-                <picture className={styles.Hero__Content__Left}>
+                <picture className={styles.Hero__Content__Lefbt}>
                     <img src="/images/avatar.png" alt="" />
                 </picture>
                 <div className={styles.Hero__Content__Right}>
@@ -46,13 +47,13 @@ export default function HomePage() {
                         </p>
                     </section>
                     <section className={styles.Hero__Content__Right_buttons}>
-                        <Link href={`portfolio`}>Got a projects?</Link>
-                        <Link href={`contact`}>Let&apos;s talk</Link>
+                        <Link href={`/portfolio`}>Got a projects?</Link>
+                        <Link href={`/contact`}>Let&apos;s talk</Link>
                     </section>
                     <section className={styles.Hero__Content__Right_info}>
                         <ul>
                             <li>
-                                <a href="tel:+54 9 11 6021 9207">+54 9 11 6021 9207</a>
+                                <a href="tel:+5491165690846">+54 9 11 6569-0846</a>
                             </li>
                             <li>
                                 <a href="mailto:ing.sanders@gmail.com">info@untalsanders.dev</a>
@@ -67,3 +68,5 @@ export default function HomePage() {
         </div>
     )
 }
+
+export default HomePage

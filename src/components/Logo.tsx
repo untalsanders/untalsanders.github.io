@@ -1,6 +1,6 @@
 'use strict'
 
-import styles from '@/assets/css/Logo.module.css'
+import styles from '@/styles/Logo.module.css'
 import Link from 'next/link'
 import LogoCircleSVG from './LogoCircleSVG'
 

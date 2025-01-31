@@ -1,21 +1,13 @@
-import styles from '@/assets/css/Blog.module.css'
+import styles from './post-list.module.css'
 import Link from 'next/link'
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from 'react'
+import { Post } from '@/features/blog/domain/models/Post'
 
-async function getPosts() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-    if (!res.ok) throw new Error('Failed to fetch data')
-    return res.json()
-}
-
-export async function PostList() {
-    const dataJson = await getPosts()
-
+const PostList = ({ posts } : { posts: Post[] }) => {
     return (
-        <section className={styles.BlogPage__PostList}>
-            {dataJson.map((post: { id: number, title: string, body: string }) => {
+        <section className={styles.PostList}>
+            {posts.map(({ id, title, content } : Post) => {
                 return (
-                    <article key={post.id}>
+                    <article key={id}>
                         <header>
                             <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 448 512">
                                 <path
@@ -24,12 +16,12 @@ export async function PostList() {
                             <span>April 12, 2023</span>
                         </header>
                         <div className="post-content">
-                            <h2>{post.title}</h2>
-                            <p>{post.body}</p>
+                            <h2>{title}</h2>
+                            <p>{content}</p>
                         </div>
                         <footer>
-                            <Link href="#">
-                                Learn more
+                            <Link href={`blog/${id}`}>
+                                Read more
                                 <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 448 512">
                                     <path
                                         d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
@@ -42,3 +34,5 @@ export async function PostList() {
         </section>
     )
 }
+
+export default PostList

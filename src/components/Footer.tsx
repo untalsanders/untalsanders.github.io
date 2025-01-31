@@ -1,4 +1,4 @@
-import styles from '@/assets/css/Footer.module.css'
+import styles from '@/styles/Footer.module.css'
 
 const Copyright = () => <div>&copy; 2024 Sanders Gutiérrez. All rights reserved.</div>
 
