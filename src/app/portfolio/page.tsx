@@ -1,4 +1,4 @@
-import styles from '@/assets/css/Portfolio.module.css'
+import styles from '@/styles/Portfolio.module.css'
 
 export default function PortfolioPage() {
     return (
@@ -70,10 +70,10 @@ export default function PortfolioPage() {
                         </picture>
                         <div>
                             <span>
-                                <a href="#">Fiction Scienty</a>
+                                <a href="#">Fiction Scientist</a>
                             </span>
                             <h3>
-                                <a href="#">Scienty</a>
+                                <a href="#">Scientist</a>
                             </h3>
                         </div>
                     </article>
@@ -106,7 +106,7 @@ export default function PortfolioPage() {
                         </p>
                         <div>
                             <h3>Alan Walker</h3>
-                            <span>Sales Manager at Vivaco Shop</span>
+                            <span>Sales Manager at Vivado Shop</span>
                         </div>
                     </article>
                     <footer>

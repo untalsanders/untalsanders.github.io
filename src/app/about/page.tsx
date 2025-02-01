@@ -1,4 +1,4 @@
-import styles from '@/assets/css/About.module.css'
+import styles from '@/styles/About.module.css'
 import Link from 'next/link'
 
 export default function about() {
@@ -14,7 +14,7 @@ export default function about() {
                                 <span>Developer and Software Engineer</span>
                             </div>
                             <div className={styles.About__Primary_blockOne_Buttons}>
-                                <Link href="../portfolio" className="link-button">
+                                <Link href="/portfolio" className="link-button">
                                     Got a project?
                                 </Link>
                                 <a

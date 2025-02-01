@@ -1,10 +1,12 @@
 import styles from '@/styles/Blog.module.css'
-import PostList from '@/features/blog/presentation/post-list/post-list'
 import { PostService } from '@/features/blog/application/services/PostService'
+import PostItem from '@/features/blog/presentation/post-item/post-item'
+import { Post } from '@/features/blog/domain/models/Post'
 
-export default async function Page() {
+export default async function Page({ params }: { params: Promise<{id: number}>}) {
+    const { id } = (await params)
     const postService = new PostService()
-    const posts = await postService.getPosts()
+    const { id : postId , title: postTitle, content: postContent } : Post = await postService.getPostById(id)
 
     return (
         <div className={styles.BlogPage}>
@@ -13,8 +15,10 @@ export default async function Page() {
                     <span>- BLOG</span>
                     <h3>My Blog and News</h3>
                 </div>
-                <PostList posts={posts}/>
+                <PostItem id={postId} title={postTitle} content={postContent} />
             </div>
         </div>
     )
 }
+
+

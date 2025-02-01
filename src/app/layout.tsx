@@ -1,8 +1,10 @@
-import styles from '@/assets/css/Layout.module.css'
-import '@/assets/css/globals.css'
-import { Footer, Header } from '@/components'
+import '@/styles/globals.css'
+import { Footer } from '@/components/Footer'
+import { RootLayoutProps } from './types'
 import { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+import { Header } from '@/components/Header'
+import styles from '@/styles/Layout.module.css'
 
 export const metadata: Metadata = {
     title: 'Sanders Gutiérrez',
@@ -18,7 +20,7 @@ const poppins = Poppins({
     style: ['italic', 'normal'],
 })
 
-export default function RootLayout({ children } : Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children } : RootLayoutProps) {
     return (
         <html lang="en" className={poppins.className}>
             <body className={styles.Layout}>
