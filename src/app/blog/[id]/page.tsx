@@ -1,22 +1,13 @@
-'use client'
-
 import styles from '@/styles/Blog.module.css'
-import { useEffect, useState } from 'react'
-import { PostsService } from '@/features/blog/application/services/PostsService'
+import { PostService } from '@/features/blog/application/services/PostService'
 import PostItem from '@/features/blog/presentation/post-item/post-item'
 import { Post } from '@/features/blog/domain/models/Post'
 
-const PostItemPage = ({ params }: { params: Promise<{id: number}>}) => {
-    const [post, setPost] = useState<Post | null>(null)
+const PostItemPage = async ({ params }: { params: Promise<{id: number}>}) => {
 
-    useEffect(() => {
-        (async () => {
-            const { id } = (await params)
-            const postsService = new PostsService()
-            const data = await postsService.getPostById(id)
-            setPost(data)
-        })()
-    }, [])
+    const { id } = (await params)
+    const postService = new PostService()
+    const { id : postId , title: postTitle, content: postContent } : Post = await postService.getPostById(id)
 
     return (
         <div className={styles.BlogPage}>
@@ -25,7 +16,7 @@ const PostItemPage = ({ params }: { params: Promise<{id: number}>}) => {
                     <span>- BLOG</span>
                     <h3>My Blog and News</h3>
                 </div>
-                <PostItem id={post?.id ?? 0} title={post?.title ?? ""} content={post?.content ?? ""} />
+                <PostItem id={postId} title={postTitle} content={postContent} />
             </div>
         </div>
     )

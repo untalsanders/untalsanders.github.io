@@ -1,10 +1,12 @@
 import { PostsUseCases } from '../../domain/usecases/PostsUseCases'
 import { Post } from '@/features/blog/domain/models/Post'
+import config from '@/config/config'
 
-export class PostsService implements PostsUseCases {
+export class PostService implements PostsUseCases {
+    private apiUrl: string = config.api.baseUrl
 
     async getPosts(): Promise<Post[]> {
-        const response = await fetch('/api/posts')
+        const response = await fetch(`${this.apiUrl}/posts`)
 
         if (!response.ok) {
             throw new Error(`Error fetching posts ${response.statusText}`)
@@ -14,7 +16,7 @@ export class PostsService implements PostsUseCases {
     }
 
     async getPostById(id: number) {
-        const response = await fetch(`/api/posts/${id}`)
+        const response = await fetch(`${this.apiUrl}/posts/${id}`)
 
         if (!response.ok) {
             throw new Error(`Error fetching posts ${response.statusText}`)
