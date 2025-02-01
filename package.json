@@ -10,7 +10,8 @@
         "lint": "next lint",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "predeploy": "npm run build"
+        "predeploy": "npm run build",
+        "server:fake": "json-server --watch db.json --port 8000"
     },
     "dependencies": {
         "next": "15.1.6",
@@ -26,6 +27,7 @@
         "eslint-config-next": "15.1.6",
         "eslint-config-prettier": "8.8.0",
         "gh-pages": "6.1.1",
+        "json-server": "1.0.0-beta.3",
         "prettier": "2.8.8"
     },
     "license": "BSL-1.0",
