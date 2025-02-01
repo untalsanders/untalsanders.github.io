@@ -1,11 +1,10 @@
 const config = {
     environment: 'development',
     api: {
-        baseUrl: process.env.API_URL || 'http://localhost:8080/api',
-        nextApi: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api',
+        baseUrl: process.env.API_URL || 'https://jsonplaceholder.typicode.com',
     },
     app: {
-        name: process.env.APP_NAME || 'My App',
+        name: process.env.APP_NAME || 'Sanders Gutiérrez',
         version: '1.0.0',
     },
 }

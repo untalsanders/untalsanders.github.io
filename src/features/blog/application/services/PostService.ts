@@ -16,7 +16,9 @@ export class PostService implements PostsUseCases {
     }
 
     async getPostById(id: number) {
-        const response = await fetch(`${this.apiUrl}/posts/${id}`)
+        const response = await fetch(`${this.apiUrl}/posts/${id}`, {
+            cache: 'force-cache',
+        })
 
         if (!response.ok) {
             throw new Error(`Error fetching posts ${response.statusText}`)

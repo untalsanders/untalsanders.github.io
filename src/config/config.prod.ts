@@ -1,10 +1,10 @@
 const config = {
     environment: 'production',
     api: {
-        baseUrl: process.env.NEXT_PUBLIC_API_URL || 'https://api.untalsanders.com/blog',
+        baseUrl: process.env.API_URL || 'https://jsonplaceholder.typicode.com',
     },
     app: {
-        name: 'My App',
+        name: process.env.APP_NAME || 'Sanders Gutiérrez',
         version: '1.0.0',
     },
 }

@@ -3,8 +3,7 @@ import { PostService } from '@/features/blog/application/services/PostService'
 import PostItem from '@/features/blog/presentation/post-item/post-item'
 import { Post } from '@/features/blog/domain/models/Post'
 
-const PostItemPage = async ({ params }: { params: Promise<{id: number}>}) => {
-
+export default async function Page({ params }: { params: Promise<{id: number}>}) {
     const { id } = (await params)
     const postService = new PostService()
     const { id : postId , title: postTitle, content: postContent } : Post = await postService.getPostById(id)
@@ -22,4 +21,4 @@ const PostItemPage = async ({ params }: { params: Promise<{id: number}>}) => {
     )
 }
 
-export default PostItemPage
+
