@@ -10,7 +10,6 @@
         "lint": "next lint",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "predeploy": "npm run build",
         "server:fake": "json-server --watch db.json --port 8000"
     },
     "dependencies": {
