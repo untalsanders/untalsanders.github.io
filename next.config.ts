@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig: import('next').NextConfig = {}
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
+    output: 'export',
+    distDir: 'dist',
+}
 
 export default nextConfig
