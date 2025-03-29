@@ -8,11 +8,52 @@
     }
 
     & > * {
-        padding: 1.5rem 1rem;
+        padding: 1rem;
         transition: color 200ms ease-in;
 
         &:hover {
             color: #f9af16;
         }
+    }
+}
+
+.ButtonMobile {
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+
+    & svg {
+        fill: #fff;
+        font-size: clamp(1rem, 1.5rem, 8vw);
+    }
+
+    @media (width >= 57.5rem) {
+        display: none;
+    }
+}
+
+.MobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: white;*/
+    background: linear-gradient(45deg, #1e1e1e, #f9af16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 3s ease-in-out, transform 1s ease-in-out;
+}
+
+.MobileMenu a {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+
+    &:hover {
+        color: #f9af16;
     }
 }

@@ -11,18 +11,3 @@
         gap: 1.25rem;
     }
 }
-
-.ButtonMobile {
-    background-color: transparent;
-    border: 0;
-    padding: 1.5rem 1rem;
-
-    & svg {
-        fill: #fff;
-        font-size: clamp(1rem, 1.5rem, 8vw);
-    }
-
-    @media (width >= 57.5rem) {
-        display: none;
-    }
-}

@@ -10,9 +10,6 @@ export function Header() {
             <div className="container">
                 <Logo />
                 <Navbar />
-                <button className={styles.ButtonMobile}>
-                    <FaBars />
-                </button>
             </div>
         </header>
     )
