@@ -1,8 +1,11 @@
+'use client'
+
 import styles from '@/styles/Blog.module.css'
 import { PostService } from '@/features/blog/application/services/PostService'
 import PostItem from '@/features/blog/presentation/post-item/post-item'
 import { Post } from '@/features/blog/domain/models/Post'
 
+// eslint-disable-next-line @next/next/no-async-client-component
 export default async function Page({ params }: { params: Promise<{id: number}>}) {
     const { id } = (await params)
     const postService = new PostService()
