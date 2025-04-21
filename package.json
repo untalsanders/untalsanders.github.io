@@ -13,7 +13,11 @@
         "server:fake": "json-server --watch db.json --port 8000"
     },
     "dependencies": {
-        "next": "15.2.4",
+        "@mdx-js/loader": "3.1.0",
+        "@mdx-js/react": "3.1.0",
+        "@next/mdx": "15.3.1",
+        "@types/mdx": "2.0.13",
+        "next": "15.3.1",
         "normalize.css": "8.0.1",
         "react": "19.1.0",
         "react-dom": "19.1.0",
