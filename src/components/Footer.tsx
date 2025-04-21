@@ -6,7 +6,7 @@ const MadeIn = () => (
     <div className={styles.Footer__Content_MadeIn}>
         <span>Made with</span>
         <img src="/images/icon-heart.svg" alt="love-heart" width={16} height={16} />
-        { 'by @UnTalSanders' }
+        {'by @UnTalSanders'}
     </div>
 )
 

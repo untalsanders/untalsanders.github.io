@@ -1,6 +1,6 @@
 'use strict'
 
-import { JSX, SVGProps } from "react"
+import { JSX, SVGProps } from 'react'
 
 export default function LogoSquareSVG(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (

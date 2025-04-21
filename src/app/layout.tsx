@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Sanders Gutiérrez',
     icons: {
         icon: '/favicon.svg',
-    }
+    },
 }
 
 const poppins = Poppins({
@@ -20,7 +20,7 @@ const poppins = Poppins({
     style: ['italic', 'normal'],
 })
 
-export default function RootLayout({ children } : RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" className={poppins.className}>
             <body className={styles.Layout}>

@@ -33,7 +33,10 @@ export function Navbar() {
                         onClick={handleMenuToggle}>
                         Portfolio
                     </Link>
-                    <Link href="/contact" className={pathname === '/contact' ? 'active' : ''} onClick={handleMenuToggle}>
+                    <Link
+                        href="/contact"
+                        className={pathname === '/contact' ? 'active' : ''}
+                        onClick={handleMenuToggle}>
                         Contact
                     </Link>
                 </nav>

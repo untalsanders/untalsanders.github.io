@@ -27,9 +27,9 @@ export default function about() {
                         </section>
                         <section className={styles.About__Primary_blockTwo}>
                             <p>
-                                My name is Sanders and I&apos;m a professional with a strong career in Software Engineering
-                                and a growing interest in Artificial Intelligence and Machine Learning, with a passion
-                                for Physics and Mathematics.
+                                My name is Sanders and I&apos;m a professional with a strong career in Software
+                                Engineering and a growing interest in Artificial Intelligence and Machine Learning, with
+                                a passion for Physics and Mathematics.
                             </p>
                             <p>
                                 I have more than 5 years of experience in software development with Java and Node.js. I
