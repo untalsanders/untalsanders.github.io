@@ -2,7 +2,7 @@
     display: none;
     user-select: none;
 
-    @media screen and (min-width: 57.5rem) {
+    @media (width >= 51.25rem) {
         display: flex;
         align-items: center;
     }
@@ -27,7 +27,7 @@
         font-size: clamp(1rem, 1.5rem, 8vw);
     }
 
-    @media (width >= 57.5rem) {
+    @media (width >= 51.25rem) {
         display: none;
     }
 }

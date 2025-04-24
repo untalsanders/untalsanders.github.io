@@ -21,9 +21,6 @@ export function Navbar() {
             </button>
             {isMenuOpen && (
                 <nav className={styles.MobileMenu}>
-                    <Link href="/" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
-                        Home
-                    </Link>
                     <Link href="/about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
                         About
                     </Link>
@@ -32,6 +29,9 @@ export function Navbar() {
                         className={pathname === '/portfolio' ? 'active' : ''}
                         onClick={handleMenuToggle}>
                         Portfolio
+                    </Link>
+                    <Link href="/blog" className={pathname === '/blog' ? 'active' : ''} onClick={handleMenuToggle}>
+                        Blog
                     </Link>
                     <Link
                         href="/contact"
@@ -42,9 +42,6 @@ export function Navbar() {
                 </nav>
             )}
             <nav className={styles.Navbar}>
-                <Link href="/" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
-                    Home
-                </Link>
                 <Link href="/about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
                     About
                 </Link>
@@ -53,6 +50,9 @@ export function Navbar() {
                     className={pathname === '/portfolio' ? 'active' : ''}
                     onClick={handleMenuToggle}>
                     Portfolio
+                </Link>
+                <Link href="/blog" className={pathname === '/blog' ? 'active' : ''} onClick={handleMenuToggle}>
+                    Blog
                 </Link>
                 <Link href="/contact" className={pathname === '/contact' ? 'active' : ''} onClick={handleMenuToggle}>
                     Contact
