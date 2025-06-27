@@ -2,7 +2,6 @@
 
 import styles from '@/styles/Header.module.css'
 import { Logo, Navbar } from '@/components'
-import { FaBars } from 'react-icons/fa'
 
 export function Header() {
     return (
