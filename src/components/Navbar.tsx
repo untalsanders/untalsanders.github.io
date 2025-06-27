@@ -35,12 +35,6 @@ export function Navbar() {
                         Portfolio
                     </Link>
                     <Link
-                        href="/blog"
-                        className={pathname === '/blog' ? 'active' : ''}
-                        onClick={handleMenuToggle}>
-                        Blog
-                    </Link>
-                    <Link
                         href="/contact"
                         className={pathname === '/contact' ? 'active' : ''}
                         onClick={handleMenuToggle}>
@@ -58,11 +52,6 @@ export function Navbar() {
                     href="/portfolio"
                     className={pathname === '/portfolio' ? 'active' : ''}>
                     Portfolio
-                </Link>
-                <Link
-                    href="/blog"
-                    className={pathname === '/blog' ? 'active' : ''}>
-                    Blog
                 </Link>
                 <Link
                     href="/contact"
