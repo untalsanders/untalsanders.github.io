@@ -9,7 +9,7 @@ import styles from '@/styles/Layout.module.css'
 export const metadata: Metadata = {
     title: 'Sanders Gutiérrez',
     icons: {
-        icon: '/favicon.svg',
+        icon: '/favicon.ico',
     },
 }
 
