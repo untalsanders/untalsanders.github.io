@@ -1,9 +1,9 @@
-.PortfolioPage {
+.ProjectsPage {
     padding: 4rem 0;
     padding-bottom: 0;
 }
 
-.PortfolioPage__Header {
+.ProjectsPage__Header {
     & > span:first-child {
         text-transform: uppercase;
         font-weight: 600;
@@ -44,7 +44,7 @@
     }
 }
 
-.PortfolioPage__Items {
+.ProjectsPage__Items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -86,7 +86,7 @@
     }
 }
 
-.PortfolioPage__Testimonials {
+.ProjectsPage__Testimonials {
     background-color: rgb(255, 245, 246);
     margin-top: 4rem;
     margin-bottom: 0;

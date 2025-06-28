@@ -29,10 +29,10 @@ export function Navbar() {
                         About
                     </Link>
                     <Link
-                        href="/portfolio"
-                        className={pathname === '/portfolio' ? 'active' : ''}
+                        href="/projects"
+                        className={pathname === '/projects' ? 'active' : ''}
                         onClick={handleMenuToggle}>
-                        Portfolio
+                        Projects
                     </Link>
                     <Link
                         href="/contact"
@@ -49,9 +49,9 @@ export function Navbar() {
                     About
                 </Link>
                 <Link
-                    href="/portfolio"
-                    className={pathname === '/portfolio' ? 'active' : ''}>
-                    Portfolio
+                    href="/projects"
+                    className={pathname === '/projects' ? 'active' : ''}>
+                    Projects
                 </Link>
                 <Link
                     href="/contact"
