@@ -1,27 +1,29 @@
-.Logo {
+.logo {
     user-select: none;
     padding: 1rem 0;
 }
 
-.Logo a {
+.logo__link {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .75rem;
 }
 
-.logoText {
+.logo__text {
+    --main-color: #ff9600;
     font-size: clamp(1rem, 1.5rem, 4.5vw);
-    font-weight: 900;
+    font-weight: 600;
 
     &:hover {
-        color: #fffc;
+        text-shadow: 0 0 1.25rem var(--main-color);
+        transition: text-shadow 250ms ease-in-out;
     }
 
     & > span {
-        color: #ff8000;
+        color: var(--main-color);
     }
 
-    @media screen and (max-width: 17.5rem) {
+    @media (width <= 17.5rem) {
         display: none;
         transition: display 150ms ease-out;
     }
