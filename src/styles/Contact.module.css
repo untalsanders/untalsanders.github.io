@@ -13,66 +13,91 @@
     flex-direction: column;
     gap: 1rem;
 
-    & span {
+    span {
         text-transform: uppercase;
         font-weight: 600;
         color: #141414aa;
     }
 
-    & h3 {
+    h3 {
         font-size: clamp(1.5rem, 2rem, 8vw);
         font-weight: 900;
     }
 
-    & p {
+    p {
         color: #141414aa;
     }
 }
 
 .ContactPage__Info {
-    border-left: 0.25rem solid #f9af16;
+    border-left: .25rem solid #f9af16;
     padding: 1rem;
 
-    & ul {
+    ul {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
 
-        & li a {
-            color: #1e1e1e;
+        li {
+            a {
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+                color: #111;
+            }
         }
     }
 }
 
-.ContactPage__Form {
+.contactForm {
     background-color: floralwhite;
-    padding: 1.5rem;
+    border: 1px solid #f9af16;
+    border-radius: .75rem;
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
 
-    & form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
+    label {
+        margin-top: 1rem;
+    }
 
-        & input,
-        & textarea {
-            border: 1px solid #ccc6;
-            border-radius: 0.5rem;
-            padding: 1rem;
-            width: 100%;
+    input,
+    textarea {
+        border: 1px solid #ccc6;
+        border-radius: .75rem;
+        padding: 1rem;
+
+        &:focus {
+            border: 1px solid red;
         }
+    }
 
-        & textarea {
-            min-height: 9.375rem;
-        }
+    textarea {
+        min-height: 150px;
+        max-width: 100%;
+    }
+}
 
-        & button {
-            font-weight: 700;
+.buttonSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: .75rem 2rem;
+    background-color: #111;
+    border: 1px solid #111;
+    border-radius: .5rem;
+    color: #f9af16;
+    transition: all .15s ease-in-out;
+    margin-top: 1rem;
 
-            &:hover {
-                background-color: #3b9241;
-                color: white;
-            }
-        }
+    &:hover {
+        background-color: #f9af16;
+        border: 1px solid #f9af16;
+        color: #111;
+        cursor: pointer;
     }
 }

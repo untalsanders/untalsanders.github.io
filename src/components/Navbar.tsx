@@ -54,7 +54,7 @@ export function Navbar() {
                     Projects
                 </Link>
                 <Link
-                    href="/contact"
+                    href="/#contact"
                     className={pathname === '/contact' ? 'active' : ''}>
                     Contact
                 </Link>
