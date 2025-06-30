@@ -51,7 +51,7 @@ const Hero = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="https://maps.app.goo.gl/U6d3hMPcVtrR9qef9" target="_blank">
+                            <a href="https://maps.app.goo.gl/e7AdznMGpiHcBEaS6" target="_blank">
                                 <FaMap />
                                 Buenos Aires, Argentina
                             </a>
