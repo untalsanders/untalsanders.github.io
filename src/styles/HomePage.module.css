@@ -1,0 +1,11 @@
+.Hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 4rem, 5vw);
+
+    @media (width >= 64rem) {
+        flex-direction: row-reverse;
+    }
+}

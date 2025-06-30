@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero"
-import { Hero as HeroStyle } from '@/styles/Hero.module.css'
+import styles from '@/styles/HomePage.module.css'
 
 const HomePage = () => {
     return (
-        <div className={`${HeroStyle} container`}>
+        <div className={`${styles.Hero} container`}>
             <Hero />
         </div>
     )
