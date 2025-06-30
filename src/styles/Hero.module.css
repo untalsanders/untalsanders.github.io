@@ -1,32 +1,20 @@
-.Hero__Content {
+.Hero {
     padding-top: 4rem;
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     gap: clamp(2rem, 4rem, 5vw);
 
-    @media (width >= 48rem) {
+    @media (width >= 64rem) {
         flex-direction: row-reverse;
     }
 }
 
-.Hero__Content__Left {
-    & img {
-        --b: 0.3125rem; /* border thickness */
-        --c: #0000 25%, #f9af16 0; /* define the color here */
-        padding: 1rem;
-        background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--c)) 0 0,
-            conic-gradient(from 180deg at top var(--b) right var(--b), var(--c)) 100% 0,
-            conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--c)) 0 100%,
-            conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--c)) 100% 100%;
-        background-size: 50px 50px; /* adjust border length here */
-        background-repeat: no-repeat;
-        transition: 0.6s;
-
-        &:hover {
-            background-size: 51% 51%;
-        }
-    }
+.HeroPicture {
+    border-radius: 2.5rem;
+    box-shadow: 0 0 20px #1e1e1e;
+    height: clamp(100%, 20rem, 80dvh);
+    padding: .5rem;
 }
 
 .Hero__Content__Right {
@@ -37,12 +25,12 @@
 }
 
 .Hero__Content__Right_title {
-    & > *:nth-child(even) {
+    > *:nth-child(even) {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
 
-    & h3 {
+    h3 {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -50,23 +38,23 @@
         line-height: 1.5;
     }
 
-    & h3:nth-child(1) {
+    h3:nth-child(1) {
         font-size: clamp(1.5rem, 2rem, 5vw);
         font-weight: 200;
 
-        & span {
+        span {
             color: #f9af16;
             font-weight: normal;
         }
     }
 
-    & h3:nth-child(2) {
+    h3:nth-child(2) {
         font-size: clamp(2rem, 4rem, 5vw);
         font-weight: 900;
         line-height: 1;
     }
 
-    & h3:nth-child(3) {
+    h3:nth-child(3) {
         font-size: clamp(1rem, 1.8rem, 3vw);
         font-weight: 600;
         color: #141414dd;
@@ -78,7 +66,7 @@
     font-weight: 300;
     color: #141414aa;
 
-    & span {
+    span {
         color: #f9af16;
         font-weight: 700;
     }
@@ -93,7 +81,7 @@
         flex-direction: row;
     }
 
-    & a {
+    a {
         background-color: #1e1e1e;
         border: 1px solid #444;
         border-radius: 0.25rem;
@@ -103,7 +91,7 @@
         padding: 0.75rem 2rem;
     }
 
-    & a:nth-child(2) {
+    a:nth-child(2) {
         background-color: transparent;
         color: #444;
     }
@@ -113,12 +101,12 @@
     border-left: 4px solid #f9af16;
     padding: 1rem;
 
-    & ul {
+    ul {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
 
-        & li a {
+        li a {
             color: #1e1e1e;
         }
     }
