@@ -1,6 +1,7 @@
 import styles from '@/styles/Hero.module.css'
 import Link from 'next/link'
-import { FaCode, FaEnvelope, FaMap, FaPhone } from 'react-icons/fa6'
+import { FaMapMarkerAlt } from 'react-icons/fa'
+import { FaCode, FaEnvelope, FaPhone } from 'react-icons/fa6'
 import { FcReading } from 'react-icons/fc'
 
 const Hero = () => {
@@ -52,7 +53,7 @@ const Hero = () => {
                         </li>
                         <li>
                             <a href="https://maps.app.goo.gl/e7AdznMGpiHcBEaS6" target="_blank">
-                                <FaMap />
+                                <FaMapMarkerAlt />
                                 Buenos Aires, Argentina
                             </a>
                         </li>
