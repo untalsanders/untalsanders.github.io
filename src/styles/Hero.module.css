@@ -1,15 +1,10 @@
-.heroPicture {
-    border-radius: 2.5rem;
-    box-shadow: 0 0 1.25rem #111;
-    height: clamp(100%, 20rem, 80dvh);
-    padding: .5rem;
-}
-
-.heroContent {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 2rem;
+.hero {
+    background-image: url('/images/pattern-code.png');
+    background-color: rgb(254, 242, 220);
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding: clamp(3rem, 5rem, 5vw) 0;
 }
 
 .heroHeader {
@@ -21,6 +16,13 @@
     h3 {
         line-height: 1.2;
     }
+}
+
+.heroBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .heroHeader__hello {
@@ -45,12 +47,14 @@
     color: #141414dd;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .5rem
 }
 
 .heroBody__description {
-    color: #1119;
+    color: #111;
     font-size: 1.125rem;
+    width: min(100%, 768px);
 }
 
 .heroBody__buttons {
@@ -66,10 +70,11 @@
     a {
         display: flex;
         align-items: center;
-        gap: .5rem;
+        justify-content: center;
+        gap: .75rem;
         background-color: #111;
         border: 1px solid #111;
-        border-radius: 0.5rem;
+        border-radius: .5rem;
         color: #f9af16;
         font-weight: 600;
         text-align: center;
