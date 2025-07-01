@@ -44,8 +44,8 @@ export function Navbar() {
             )}
             <nav className={styles.Navbar}>
                 <Link
-                    href="/about"
-                    className={pathname === '/about' ? 'active' : ''}>
+                    href="/#about"
+                    className={pathname === '/#about' ? 'active' : ''}>
                     About
                 </Link>
                 <Link
@@ -54,8 +54,13 @@ export function Navbar() {
                     Projects
                 </Link>
                 <Link
+                    href="/#services"
+                    className={pathname === '/#services' ? 'active' : ''}>
+                    Services
+                </Link>
+                <Link
                     href="/#contact"
-                    className={pathname === '/contact' ? 'active' : ''}>
+                    className={pathname === '/#contact' ? 'active' : ''}>
                     Contact
                 </Link>
             </nav>

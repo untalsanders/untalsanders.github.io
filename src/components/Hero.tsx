@@ -27,7 +27,7 @@ export default function Hero() {
                             <FaCode />
                             View Projects
                         </Link>
-                        <Link href="/contact">
+                        <Link href="/#contact">
                             <FaHandshake />
                             Hire Me
                         </Link>

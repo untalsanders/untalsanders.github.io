@@ -2,9 +2,8 @@ import type { NextConfig } from 'next'
 import createMDX from '@next/mdx'
 
 const nextConfig: NextConfig = {
-    output: 'export',
     distDir: 'dist',
-    pageExtensions: ['jsx', 'js', 'ts', 'tsx', 'mdx', 'md'],
+    pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 }
 
 const withMDX = createMDX({

@@ -25,7 +25,7 @@ export async function getPost(slug) {
     }
 }
 
-export function getPosts() {
+export async function getPosts() {
     return getFiles().reduce((posts, slug) => {
         const mdxSource = getFile(slug)
         const { data } = matter(mdxSource)
