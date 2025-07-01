@@ -18,13 +18,13 @@ export default function About() {
                             <h3><FaUser /> Who Am I?</h3>
                             <p>
                                 My name is Sanders and I&apos;m a professional with a strong career in Software
-                                Engineering and a growing interest in Artificial Intelligence and Machine Learning, with
-                                a passion for Physics and Mathematics.
+                                Engineering and a growing interest in Artificial Intelligence, Machine Learning and Internet of Things,
+                                with a passion for Physics and Mathematics.
                             </p>
                             <p>
-                                I have more than 5 years of experience in software development with Java and Node.js. I
-                                have creativity to solve problems and adapt to different environments and cultures.
-                                Ability to work in a team and manage interpersonal relationships.
+                                Also, I&apos;m passionate developer with more than <strong>6+ years</strong> of experience building
+                                web applications with Java, Python and Node.js. When I&apos;m not coding, you can find me exploring new
+                                technologies, writting tech article or enjoying a fresh cup of coffee while debuggin complex problems.
                             </p>
                         </section>
                         <section className={styles.aboutStats}>

@@ -29,7 +29,15 @@
 
 .aboutBody {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
+
+    @media (width >= 64rem) {
+        flex-wrap: nowrap;
+        flex-direction: initial;
+        align-items: flex-start;
+    }
 }
 
 .aboutPicture {
@@ -39,7 +47,7 @@
     overflow: hidden;
     border-radius: 1.25rem;
     max-width: 25rem;
-    min-width: 20rem;
+    min-width: 15rem;
 
     img {
         width: 100%;
