@@ -1,31 +1,50 @@
 .about {
     padding: 6rem 0;
+
+    > * {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
-.aboutContainer {
-    display: grid;
-    grid-template-columns: min(100%, 30rem) 1fr;
-    place-items: center;
-    gap: 2.5rem;
+.aboutHeader {
+    text-align: center;
+    padding: 1.25rem 0;
 
-    /* @media (width >= 60rem) {
-        grid-template-columns: minmax(30%, 40%) 1fr;
-    } */
+    h2 {
+        border-bottom: .25rem solid #f9af16;
+        font-size: 2.25rem;
+        display: inline;
+
+        span {
+            color: #f9af16;
+        }
+    }
+
+    p {
+        padding: 1rem;
+    }
 }
 
-.heroPicture {
+.aboutBody {
+    display: flex;
+    gap: 2rem;
+}
+
+.aboutPicture {
     background-color: #f9af16;
     border: .25rem solid #f9af16;
     box-shadow: 0 0 1.25rem #f9af16;
     overflow: hidden;
-    border-radius: 50%;
-    width: min(25rem, 100%);
-    height: 25rem;
+    border-radius: 1.25rem;
+    max-width: 25rem;
+    min-width: 20rem;
 
     img {
         width: 100%;
         height: 100%;
-        border-radius: 50%;
+        border-radius: 1.25rem;
         transition: .75s;
 
         &:hover {
@@ -34,49 +53,30 @@
     }
 }
 
-.aboutContent {
+.aboutInfo {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    p {
-        color: #141414aa;
-    }
-
-    p:nth-child(2) {
-        margin-bottom: 2rem;
-    }
 }
 
-.aboutContent__social {
+.aboutDescription {
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-
-        li a svg {
-            font-size: 1.75rem;
-        }
-    }
 }
 
-.aboutContent__stats {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.aboutStats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
     gap: 1.25rem;
 
     div {
         background-color: #fef2dc;
-        width: min(17.5rem, 100%);
-        padding: 1.25rem;
+        padding: 1rem;
         border-radius: .25rem;
 
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        flex-grow: 1;
+        justify-content: space-between;
 
         span:first-child {
             font-size: 2rem;
@@ -85,8 +85,6 @@
 
         span:nth-child(2) {
             color: #141414aa;
-            font-weight: 600;
-            text-transform: uppercase;
         }
     }
 }
