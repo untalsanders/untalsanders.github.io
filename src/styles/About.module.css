@@ -1,17 +1,28 @@
-.heroPicture {
-    border-radius: 2.5rem;
-    box-shadow: 0 0 1.25rem #111;
-    height: clamp(100%, 20rem, 80dvh);
-    padding: .5rem;
+.about {
+    padding: 6rem 0;
 }
 
-.About__Primary {
-    padding: 4rem 0;
+.heroPicture {
+    background-color: #f9af16;
+    border: .25rem solid #f9af16;
+    box-shadow: 0 0 1.25rem #f9af16;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    transition: .75s;
 
-    & > :first-child {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
+    img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: .75s;
+        object-position: top 2rem;
+
+        &:hover {
+            transform: scale(1.8) translate(-1.5rem, 5rem);
+        }
     }
 }
 
