@@ -1,6 +1,6 @@
 .hero {
     background-image: url('/images/pattern-code.png');
-    background-color: rgb(254, 242, 220);
+    background-color: #fef2dc;
     text-align: center;
     display: grid;
     place-content: center;
