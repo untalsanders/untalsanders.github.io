@@ -4,15 +4,13 @@ import styles from '@/styles/Logo.module.css'
 import Link from 'next/link'
 import LogoCircleSVG from './LogoCircleSVG'
 
-const VITE_APP_URL = '/'
-
 export function Logo() {
     return (
-        <div className={styles.Logo}>
-            <Link href={VITE_APP_URL}>
+        <div className={styles.logo}>
+            <Link href="/" className={styles.logo__link}>
                 <LogoCircleSVG />
-                <span className={styles.logoText}>
-                    Sanders <span>Gutiérrez</span>
+                <span className={styles.logo__text}>
+                    Dev<span>Pro</span>
                 </span>
             </Link>
         </div>

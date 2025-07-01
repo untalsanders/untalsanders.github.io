@@ -1,9 +1,9 @@
-import styles from '@/styles/Portfolio.module.css'
+import styles from '@/styles/Projects.module.css'
 
-export default function PortfolioPage() {
+export default function ProjectsPage() {
     return (
-        <div className={styles.PortfolioPage}>
-            <div className={`${styles.PortfolioPage__Header} container`}>
+        <div className={styles.ProjectsPage}>
+            <div className={`${styles.ProjectsPage__Header} container`}>
                 <span>- PROJECTS</span>
                 <header>
                     <h3>Recent completed works</h3>
@@ -11,7 +11,7 @@ export default function PortfolioPage() {
             </div>
 
             <section>
-                <div className={`${styles.PortfolioPage__Items} container`}>
+                <div className={`${styles.ProjectsPage__Items} container`}>
                     <article>
                         <picture>
                             <img src="/images/img-1.jpg" alt="image" />
@@ -93,7 +93,7 @@ export default function PortfolioPage() {
                 </div>
             </section>
 
-            <div className={styles.PortfolioPage__Testimonials}>
+            <div className={styles.ProjectsPage__Testimonials}>
                 <section className="container">
                     <header>
                         <span>- Testimonial</span>

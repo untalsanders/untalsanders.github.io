@@ -10,9 +10,7 @@ export function Navbar() {
     const pathname = usePathname()
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const handleMenuToggle = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
+    const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen)
 
     return (
         <>
@@ -21,37 +19,48 @@ export function Navbar() {
             </button>
             {isMenuOpen && (
                 <nav className={styles.MobileMenu}>
-                    <Link href="/" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
+                    <Link
+                        href="/"
+                        className={pathname === '/' ? 'active' : ''}
+                        onClick={handleMenuToggle}>
                         Home
                     </Link>
                     <Link href="/about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
                         About
                     </Link>
                     <Link
-                        href="/portfolio"
-                        className={pathname === '/portfolio' ? 'active' : ''}
+                        href="/projects"
+                        className={pathname === '/projects' ? 'active' : ''}
                         onClick={handleMenuToggle}>
-                        Portfolio
+                        Projects
                     </Link>
-                    <Link href="/contact" className={pathname === '/contact' ? 'active' : ''} onClick={handleMenuToggle}>
+                    <Link
+                        href="/contact"
+                        className={pathname === '/contact' ? 'active' : ''}
+                        onClick={handleMenuToggle}>
                         Contact
                     </Link>
                 </nav>
             )}
             <nav className={styles.Navbar}>
-                <Link href="/" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
-                    Home
-                </Link>
-                <Link href="/about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
+                <Link
+                    href="/#about"
+                    className={pathname === '/#about' ? 'active' : ''}>
                     About
                 </Link>
                 <Link
-                    href="/portfolio"
-                    className={pathname === '/portfolio' ? 'active' : ''}
-                    onClick={handleMenuToggle}>
-                    Portfolio
+                    href="/projects"
+                    className={pathname === '/projects' ? 'active' : ''}>
+                    Projects
                 </Link>
-                <Link href="/contact" className={pathname === '/contact' ? 'active' : ''} onClick={handleMenuToggle}>
+                <Link
+                    href="/#services"
+                    className={pathname === '/#services' ? 'active' : ''}>
+                    Services
+                </Link>
+                <Link
+                    href="/#contact"
+                    className={pathname === '/#contact' ? 'active' : ''}>
                     Contact
                 </Link>
             </nav>

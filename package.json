@@ -1,19 +1,22 @@
 {
     "private": true,
     "version": "1.0.0",
-    "author": "Sanders Gutiérrez <ing.sanders@gmail.com> (https://untalsanders.github.io)",
+    "author": "Sanders Gutiérrez <ing.sanders@gmail.com> (https://untalsanders.com)",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "deploy": "gh-pages -d dist",
         "lint": "next lint",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
         "server:fake": "json-server --watch db.json --port 8000"
     },
     "dependencies": {
-        "next": "15.2.4",
+        "@mdx-js/loader": "3.1.0",
+        "@mdx-js/react": "3.1.0",
+        "@next/mdx": "15.3.1",
+        "@types/mdx": "2.0.13",
+        "next": "15.3.1",
         "normalize.css": "8.0.1",
         "react": "19.1.0",
         "react-dom": "19.1.0",
@@ -25,14 +28,12 @@
         "eslint": "8.57.0",
         "eslint-config-next": "15.2.4",
         "eslint-config-prettier": "8.8.0",
-        "gh-pages": "6.3.0",
         "json-server": "1.0.0-beta.3",
         "prettier": "2.8.8"
     },
     "license": "BSL-1.0",
     "engines": {
-        "node": "22.14.0",
-        "pnpm": "10.7.0"
+        "node": "22"
     },
-    "packageManager": "pnpm@10.7.0"
+    "packageManager": "pnpm@10.12.4"
 }

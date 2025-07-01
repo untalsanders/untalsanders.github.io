@@ -1,6 +1,6 @@
-import { Post } from '../models/Post';
+import { Post } from '../models/Post'
 
-export interface PostsUseCases {
+export interface PostUseCases {
     getPosts(): Promise<Post[]>
     getPostById(id: number): Promise<Post>
 }
