@@ -2,7 +2,7 @@ import styles from '@/styles/Services.module.css'
 
 export default function Services() {
     return (
-        <div id='services' className={styles.ServicePage}>
+        <div id="services" className={styles.ServicePage}>
             <div className="container">
                 <section className={styles.ServicePage__Header}>
                     <header>
@@ -27,8 +27,8 @@ export default function Services() {
                             <h3>Software Development</h3>
                             <p>
                                 Get an optimized design aligned with the visual identity of your brand, planned from
-                                usability and become more visible to your audiences through a friendly design
-                                optimized for search engines.
+                                usability and become more visible to your audiences through a friendly design optimized
+                                for search engines.
                             </p>
                         </article>
                         <article>
@@ -46,8 +46,8 @@ export default function Services() {
                             <h3>Mobile Apps</h3>
                             <p>
                                 Align current mobile trends, to improve your processes and increase the level of
-                                accessibility and visibility of your customers, allowing you to build loyalty with
-                                your target audience, since they can be in front of your business at all times.
+                                accessibility and visibility of your customers, allowing you to build loyalty with your
+                                target audience, since they can be in front of your business at all times.
                             </p>
                         </article>
                         <article>

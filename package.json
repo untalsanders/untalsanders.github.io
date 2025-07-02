@@ -7,8 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "format": "prettier . --write",
-        "format:check": "prettier . --check",
+        "fmt": "prettier . --write",
+        "fmt:check": "prettier . --check",
         "server:fake": "json-server --watch db.json --port 8000"
     },
     "dependencies": {
