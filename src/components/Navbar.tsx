@@ -19,10 +19,10 @@ export function Navbar() {
             </button>
             {isMenuOpen && (
                 <nav className={styles.MobileMenu}>
-                    <Link href="/" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
+                    <Link href="/#top" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
                         Home
                     </Link>
-                    <Link href="/about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
+                    <Link href="/#about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
                         About
                     </Link>
                     <Link
@@ -32,7 +32,7 @@ export function Navbar() {
                         Projects
                     </Link>
                     <Link
-                        href="/contact"
+                        href="/#contact"
                         className={pathname === '/contact' ? 'active' : ''}
                         onClick={handleMenuToggle}>
                         Contact
