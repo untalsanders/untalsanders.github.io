@@ -7,7 +7,7 @@ import LogoCircleSVG from './LogoCircleSVG'
 export function Logo() {
     return (
         <div className={styles.logo}>
-            <Link href="/" className={styles.logo__link}>
+            <Link href="/#top" className={styles.logo__link}>
                 <LogoCircleSVG />
                 <span className={styles.logo__text}>
                     Dev<span>Pro</span>

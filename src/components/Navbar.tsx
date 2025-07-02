@@ -19,13 +19,10 @@ export function Navbar() {
             </button>
             {isMenuOpen && (
                 <nav className={styles.MobileMenu}>
-                    <Link
-                        href="/"
-                        className={pathname === '/' ? 'active' : ''}
-                        onClick={handleMenuToggle}>
+                    <Link href="/#top" className={pathname === '/' ? 'active' : ''} onClick={handleMenuToggle}>
                         Home
                     </Link>
-                    <Link href="/about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
+                    <Link href="/#about" className={pathname === '/about' ? 'active' : ''} onClick={handleMenuToggle}>
                         About
                     </Link>
                     <Link
@@ -35,7 +32,7 @@ export function Navbar() {
                         Projects
                     </Link>
                     <Link
-                        href="/contact"
+                        href="/#contact"
                         className={pathname === '/contact' ? 'active' : ''}
                         onClick={handleMenuToggle}>
                         Contact
@@ -43,24 +40,16 @@ export function Navbar() {
                 </nav>
             )}
             <nav className={styles.Navbar}>
-                <Link
-                    href="/#about"
-                    className={pathname === '/#about' ? 'active' : ''}>
+                <Link href="/#about" className={pathname === '/#about' ? 'active' : ''}>
                     About
                 </Link>
-                <Link
-                    href="/projects"
-                    className={pathname === '/projects' ? 'active' : ''}>
+                <Link href="/projects" className={pathname === '/projects' ? 'active' : ''}>
                     Projects
                 </Link>
-                <Link
-                    href="/#services"
-                    className={pathname === '/#services' ? 'active' : ''}>
+                <Link href="/#services" className={pathname === '/#services' ? 'active' : ''}>
                     Services
                 </Link>
-                <Link
-                    href="/#contact"
-                    className={pathname === '/#contact' ? 'active' : ''}>
+                <Link href="/#contact" className={pathname === '/#contact' ? 'active' : ''}>
                     Contact
                 </Link>
             </nav>

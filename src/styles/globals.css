@@ -28,7 +28,7 @@ body {
 }
 
 p {
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
 }
 
 a {
@@ -59,13 +59,13 @@ li {
 
 .link-button {
     background-color: #1e1e1e;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     border: 1px solid #141414dd;
     color: #fff;
     font-weight: normal;
     text-align: center;
-    padding: .75rem 2rem;
-    transition: all .3s ease-in-out;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
         background-color: transparent;
