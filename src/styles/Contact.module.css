@@ -24,6 +24,11 @@
 
     p {
         padding: 1rem;
+        color: #14141499;
+        font-size: 1.125rem;
+        font-weight: 300;
+        max-width: 48rem;
+        margin: 0 auto;
     }
 }
 
@@ -50,13 +55,13 @@
     }
 
     p {
-        color: #141414aa;
+        color: #141414;
     }
 }
 
 .contactInfo {
     border-left: 0.25rem solid #f9af16;
-    padding: 1rem;
+    padding: .5rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

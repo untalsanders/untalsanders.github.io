@@ -10,7 +10,8 @@ export default function About() {
                         About <span>Me</span>
                     </h2>
                     <p>
-                        Developer committed to clean, efficient, and tailored solutions. Lover of good coffee and open innovation, focused on creating real value for your business.
+                        Developer committed to clean, efficient, and tailored solutions. Lover of good coffee and open
+                        innovation, focused on creating real value for your business.
                     </p>
                 </div>
                 <div className={`${styles.aboutBody}`}>

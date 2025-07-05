@@ -1,8 +1,62 @@
+'use client'
+
+import { sendEmail } from '@/app/actions'
+import { EmailData } from '@/app/types'
 import styles from '@/styles/Contact.module.css'
+import { ChangeEvent, FormEvent, useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast'
 import { FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 
+const notify = (message: string) =>
+    toast(message, {
+        position: 'top-center',
+    })
+
 export default function Contact() {
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [formData, setFormData] = useState<EmailData>({
+        name: '',
+        email: '',
+        subject: '',
+        body: '',
+    })
+
+    const handleFormChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target
+        setFormData(prevData => ({
+            ...prevData,
+            [name]: value,
+        }))
+    }
+
+    const handleFormSubmit = async (e: FormEvent) => {
+        e.preventDefault()
+
+        if (!formData.name || !formData.email || !formData.body) {
+            setIsSubmitting(false)
+            notify('⚠️ Please fill in all fields.')
+            return
+        }
+
+        setIsSubmitting(true)
+
+        try {
+            await sendEmail(formData)
+            notify('✅ Message sent successfully!')
+            setFormData({
+                name: '',
+                email: '',
+                subject: '',
+                body: '',
+            })
+        } catch (e) {
+            notify('An unexpected error occurred.')
+        } finally {
+            setIsSubmitting(false)
+        }
+    }
+
     return (
         <div id="contact" className={styles.contact}>
             <div className="container">
@@ -72,21 +126,29 @@ export default function Contact() {
                         </ul>
                     </div>
 
-                    <form className={styles.contactForm} method="POST">
+                    <form onSubmit={handleFormSubmit} className={styles.contactForm}>
                         <h2>
                             <FaEnvelope /> Send a Message
                         </h2>
+                        <p>Complete the form and I will contact you as soon as possible.</p>
                         <label>Name</label>
-                        <input name="nickname" type="text" placeholder="Your Name" required />
+                        <input name="name" type="text" placeholder="Your Name" onChange={handleFormChange} />
                         <label>Email</label>
-                        <input name="email" type="email" placeholder="Your Email" required />
+                        <input name="email" type="email" placeholder="Your Email" onChange={handleFormChange} />
+                        <label>Subject</label>
+                        <input name="subject" type="text" placeholder="Your Subject" onChange={handleFormChange} />
                         <label>Message</label>
-                        <textarea name="message" placeholder="Your Message" rows={8} required></textarea>
-                        <button type="submit" className={styles.buttonSubmit}>
+                        <textarea
+                            name="body"
+                            placeholder="Your Message"
+                            rows={8}
+                            onChange={handleFormChange}></textarea>
+                        <button type="submit" className={styles.buttonSubmit} disabled={isSubmitting}>
                             <FaPaperPlane />
-                            Send Message
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
                         </button>
                     </form>
+                    <Toaster />
                 </div>
             </div>
         </div>
