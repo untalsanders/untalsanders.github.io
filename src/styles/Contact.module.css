@@ -24,6 +24,11 @@
 
     p {
         padding: 1rem;
+        color: #14141499;
+        font-size: 1.125rem;
+        font-weight: 300;
+        max-width: 48rem;
+        margin: 0 auto;
     }
 }
 
@@ -50,7 +55,7 @@
     }
 
     p {
-        color: #141414aa;
+        color: #141414;
     }
 }
 
