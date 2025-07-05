@@ -7,6 +7,10 @@ import { FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 
 export default function Contact() {
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [successMessage, setSuccessMessage] = useState('')
+    const [errorMessage, setErrorMessage] = useState('')
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -104,6 +108,7 @@ export default function Contact() {
                         <h2>
                             <FaEnvelope /> Send a Message
                         </h2>
+                        <p>Complete the form and I will contact you as soon as possible.</p>
                         <label>Name</label>
                         <input name="name" type="text" placeholder="Your Name" onChange={handleFormChange} />
                         <label>Email</label>
@@ -116,9 +121,9 @@ export default function Contact() {
                             placeholder="Your Message"
                             rows={8}
                             onChange={handleFormChange}></textarea>
-                        <button type="submit" className={styles.buttonSubmit}>
+                        <button type="submit" className={styles.buttonSubmit} disabled={isSubmitting}>
                             <FaPaperPlane />
-                            Send Message
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
                         </button>
                     </form>
                 </div>
