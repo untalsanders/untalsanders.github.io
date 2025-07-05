@@ -1,8 +1,36 @@
+'use client'
+
+import { sendEmail } from '@/app/actions'
 import styles from '@/styles/Contact.module.css'
+import { ChangeEvent, FormEvent, useState } from 'react'
 import { FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaPhone, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    })
+
+    const handleFormChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target
+        setFormData(prevData => ({
+            ...prevData,
+            [name]: value,
+        }))
+    }
+
+    const handleFormSubmit = async (e: FormEvent) => {
+        e.preventDefault()
+        try {
+            await sendEmail(formData)
+        } catch (err) {
+            console.error(err)
+        }
+    }
+
     return (
         <div id="contact" className={styles.contact}>
             <div className="container">
@@ -72,16 +100,22 @@ export default function Contact() {
                         </ul>
                     </div>
 
-                    <form className={styles.contactForm} method="POST">
+                    <form onSubmit={handleFormSubmit} className={styles.contactForm}>
                         <h2>
                             <FaEnvelope /> Send a Message
                         </h2>
                         <label>Name</label>
-                        <input name="nickname" type="text" placeholder="Your Name" required />
+                        <input name="name" type="text" placeholder="Your Name" onChange={handleFormChange} />
                         <label>Email</label>
-                        <input name="email" type="email" placeholder="Your Email" required />
+                        <input name="email" type="email" placeholder="Your Email" onChange={handleFormChange} />
+                        <label>Subject</label>
+                        <input name="subject" type="text" placeholder="Your Subject" onChange={handleFormChange} />
                         <label>Message</label>
-                        <textarea name="message" placeholder="Your Message" rows={8} required></textarea>
+                        <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            rows={8}
+                            onChange={handleFormChange}></textarea>
                         <button type="submit" className={styles.buttonSubmit}>
                             <FaPaperPlane />
                             Send Message
